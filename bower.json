@@ -1,0 +1,17 @@
+{
+  "name": "sea-fewd",
+  "version": "0.0.0",
+  "homepage": "https://github.com/evblurbs/sea-fewd",
+  "authors": [
+    "Evan Johnson <evan@createinform.com>"
+  ],
+  "description": "A React and Parse app for General Assembly's FEWD course.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

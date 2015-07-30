@@ -1,0 +1,23 @@
+{
+  "name": "sea-fewd",
+  "version": "1.0.0",
+  "description": "A React and Parse app for General Assembly's FEWD course.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --devtool eval --hot --progress --colors --content-base build",
+    "deploy": "NODE_ENV=production webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evblurbs/sea-fewd.git"
+  },
+  "author": "Evan Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evblurbs/sea-fewd/issues"
+  },
+  "homepage": "https://github.com/evblurbs/sea-fewd#readme",
+  "dependencies": {
+    "jsx-loader": "^0.13.2"
+  }
+}
