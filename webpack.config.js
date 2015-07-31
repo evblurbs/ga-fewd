@@ -11,7 +11,7 @@ var config = {
   // We split the entry into two specific chunks. Our app and vendors. Vendors
   // specify that react should be part of that chunk
   entry: {
-    app: process.env.NODE_ENV === 'production' ? ['./app/main.js'] : ['webpack/hot/dev-server', './app/main.js']
+    app: process.env.NODE_ENV === 'production' ? ['./app/App.js'] : ['webpack/hot/dev-server', './app/App.js']
   },
   resolve: { alias: {} },
 
