@@ -6,3 +6,12 @@ module.exports = React.createClass({
     );
   }
 });
+
+curl -X GET \
+  -H "X-Parse-Application-Id: AaX7jjvYNO0hc0DAjy7EHOj3jDvovR4z7TVPHOyq" \
+  -H "X-Parse-REST-API-Key: U48iJwZuCQj46B697tH4EyTiAKWiCDp22Q4AbHDI" \
+  -H "X-Parse-Revocable-Session: 1" \
+  -G \
+  --data-urlencode 'username=evblurbs' \
+  --data-urlencode 'password=wtfparse?' \
+  https://api.parse.com/1/login

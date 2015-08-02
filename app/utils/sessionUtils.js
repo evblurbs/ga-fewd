@@ -1,7 +1,7 @@
-var userSession = {
+var sessionUtils = {
   createNewSession: function(sessionToken, serverResponse){
     serverResponse.writeHead(302, {
-      'Set-Cookie': 'session=' + sessionToken,
+      'Set-Cookie': 'session-token=' + sessionToken,
       'Location' : '/',
       'Content-Type': 'text/plain'
     });
@@ -10,5 +10,5 @@ var userSession = {
   }
 };
 
-module.exports = userSession;
+module.exports = sessionUtils;
 

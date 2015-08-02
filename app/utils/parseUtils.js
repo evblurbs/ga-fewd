@@ -1,6 +1,7 @@
 var Parse = require('parse').Parse;
 var appConstants = require('../constants/appConstants');
-var userSession = require('./userSession');
+var sessionUtils = require('./sessionUtils');
+var https = require('https');
 
 var parseUtils = {
   // function for server side code
@@ -9,48 +10,50 @@ var parseUtils = {
     var _this = this;
 
     // Initialize Parse for Server Side queries
-    Parse.initialize(appConstants.PARSE_APP_ID, appConstants.PARSE_JS_KEY);
+    Parse.initialize(appConstants.PARSE_APP_ID, appConstants.PARSE_JS_KEY, appConstants.PARSE_MASTER_KEY);
     // Enables us to login the user from the
     // server side (remove if we find another way
     // to get the session token)
+
     Parse.User.enableUnsafeCurrentUser();
 
     // store github data
     this.githubData = githubData;
     this.serverResponse = serverResponse;
+    this.sessionUtils = sessionUtils;
 
-    var findUser = function(githubData) {
+    var path = '/1/login?username=';
+    path += encodeURIComponent(githubData.login);
+    path += '&password=';
+    path += encodeURIComponent(String(githubData.id));
 
-      var User = Parse.Object.extend("User");
-      var query = new Parse.Query(User);
-      query.equalTo("username", githubData.login);
-      query.first({
-        success: function(user) {
-          // Successfully retrieved the user.
-          if(user) {
-            // TODO: Figure out way to get the
-            // session token without loggin the user in?
-            Parse.User.logIn(githubData.login, githubData.id, {
-              success: function(userLoginResponse) {
-                // Do stuff after successful login.
-                userSession.createNewSession(userLoginResponse._sessionToken, this.serverResponse);
-              }.bind(this),
-              error: function(user, error) {
-                console.log("Error: " + error.code + " " + error.message);
-              }
-            });
-          } else {
-            this.serverSignUp();
-          }
-        }.bind(_this),
-        error: function(error) {
-          console.log("Error: " + error.code + " " + error.message);
-        }
+    https.get({
+      host: 'api.parse.com',
+      path: path,
+      headers: {
+        "X-Parse-Application-Id":appConstants.PARSE_APP_ID,
+        "X-Parse-REST-API-Key":appConstants.REST_API_KEY,
+      }
+    }, function(response) {
+      // Continuously update stream with data
+      var body = '';
+      response.on('data', function(d) {
+        body += d;
       });
-    };
-
-    findUser(githubData);
-
+      response.on('end', function() {
+        // Data reception is done, do whatever with it!
+        var jsonResponse = JSON.parse(body);
+        if(jsonResponse.error){
+          process.stdout.write("Error reading from parse API: ");
+          process.stdout.write(jsonResponse.error);
+        }
+        if(jsonResponse.sessionToken) {
+          this.sessionUtils.createNewSession(jsonResponse.sessionToken, this.serverResponse);
+        } else {
+          this.serverSignUp();
+        }
+      }.bind(this));
+    }.bind(this));
   },
 
   serverSignUp: function() {
@@ -66,14 +69,13 @@ var parseUtils = {
     user.signUp(null, {
       success: function(user) {
         // Hooray! User signed up
-        userSession.createNewSession(user._sessionToken, this.serverResponse);
+        sessionUtils.createNewSession(user._sessionToken, this.serverResponse);
       }.bind(this),
       error: function(user, error) {
         console.log("Error: " + error.code + " " + error.message);
       }
     });
   },
-
 
   login: function(githubData) {
 

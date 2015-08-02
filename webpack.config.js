@@ -34,7 +34,6 @@ var config = {
   }
 };
 
-config.addVendor('react', bower_dir + '/react/react.min.js');
 
 module.exports = config;
 
