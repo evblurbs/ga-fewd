@@ -12,6 +12,10 @@ var Item = React.createClass({
     );
   },
 
+  shouldComponentUpdate: function() {
+    return false;
+  },
+
   render: function(){
     var liClass = "message";
     var isCurrentUser = false;

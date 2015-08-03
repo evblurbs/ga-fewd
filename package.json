@@ -4,7 +4,7 @@
   "description": "A React and Parse app for General Assembly's FEWD course.",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --devtool eval --hot --progress --colors --content-base build",
+    "dev": "webpack-dev-server --devtool eval --hot --progress --colors --content-base dist",
     "deploy": "NODE_ENV=production webpack -p"
   },
   "repository": {

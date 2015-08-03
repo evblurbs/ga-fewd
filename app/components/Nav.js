@@ -10,7 +10,7 @@ var Nav = React.createClass({
           <Link to="home">Home</Link>
         </li>
         <li>
-          <a href="/">Lessons</a>
+          <Link to="lessons">Lessons</Link>
         </li>
         <li>
           <Link to="messages">Messages</Link>

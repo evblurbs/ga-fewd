@@ -16,12 +16,12 @@ var List = React.createClass({
   },
 
   componentDidMount: function() {
-    timeoutId = window.setTimeout(this.refresh, 500);
+    timeoutId = window.setTimeout(this.refresh, 3000);
   },
 
   refresh: function() {
     this.refreshQueries();
-    timeoutId = window.setTimeout(this.refresh, 500);
+    timeoutId = window.setTimeout(this.refresh, 3000);
   },
 
   componentWillUnmount: function() {
