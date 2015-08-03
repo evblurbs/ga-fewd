@@ -1,12 +1,10 @@
 var sessionUtils = {
   createNewSession: function(sessionToken, serverResponse){
-    serverResponse.writeHead(302, {
-      'Set-Cookie': 'session-token=' + sessionToken,
-      'Location' : '/',
-      'Content-Type': 'text/plain'
-    });
+    serverResponse.setHeader('Set-Cookie', 'session-token=' + sessionToken);
+    serverResponse.setHeader('Location', '/');
+    serverResponse.setHeader('Content-Type', 'text/plain');
+    serverResponse.statusCode = 302;
     serverResponse.end();
-
   }
 };
 
