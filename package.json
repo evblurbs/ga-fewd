@@ -19,6 +19,8 @@
   "homepage": "https://github.com/evblurbs/sea-fewd#readme",
   "dependencies": {
     "axios": "^0.5.4",
+    "date-format": "0.0.2",
+    "date-format-lite": "^0.7.4",
     "jsx-loader": "^0.13.2",
     "object-assign": "^3.0.0",
     "parse": "^1.5.0",

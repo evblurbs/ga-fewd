@@ -1,11 +1,12 @@
 var React = require('react');
 var Parse = require('parse').Parse;
+var ParseReact = require('parse-react');
 
 var AddLesson = React.createClass({
+
   getInitialState: function() {
     return {
-      isAdmin: false,
-      isCheckingPermissions: true
+      isAdmin: false
     }
   },
 
@@ -16,34 +17,85 @@ var AddLesson = React.createClass({
     query.first().then(function(adminRole) {
       if (adminRole) {
         this.setState({
-          isAdmin: true,
-          isCheckingPermissions: false
+          isAdmin: true
         });
       } else {
         this.setState({
-          isAdmin: false,
-          isCheckingPermissions: false
+          isAdmin: false
         });
       }
     }.bind(this));
   },
 
-  renderAddLesson: function() {
-    if(this.state.isAdmin) {
-      return (
-        <h2>Add Lesson</h2>
-      );
-    } else {
-      return (
-        <h2>Admin priveleges required.</h2>
-      );
+  addLesson: function() {
+    var title = React.findDOMNode(this.refs.title);
+    var description = React.findDOMNode(this.refs.description);
+    var slides = React.findDOMNode(this.refs.slides);
+    var lessonDate = React.findDOMNode(this.refs.lessonDate);
+    var image = React.findDOMNode(this.refs.image);
+    var number = React.findDOMNode(this.refs.number);
+
+    if (title.value.length && description.value.length && slides.value.length && image.value.length && number.value.length) {
+      ParseReact.Mutation.Create('Lesson', {
+        title: title.value,
+        description: description.value,
+        slides: '/' + slides.value,
+        date: lessonDate.value,
+        image: image.value,
+        number: number.value
+      }).dispatch();
+
+      title.value = '';
+      description.value = '';
+      slides.value = '';
+      lessonDate.value = '';
+      image.value = '';
+      number.value = '';
     }
+  },
+
+  renderAddLesson: function() {
+    return (
+      <div>
+        <h2>Add Lesson</h2>
+        <form>
+          <input
+            type="text"
+            ref="title"
+            placeholder="Title" /><br />
+          <input
+            type="text"
+            ref="number"
+            placeholder="Lesson number (i.e., 01)" /><br />
+          <textarea
+            ref="description"
+            placeholder="description"></textarea><br />
+          <input
+            type="text"
+            ref="slides"
+            placeholder="Slides" /><br />
+          <input
+            type="text"
+            ref="lessonDate"
+            placeholder="Date (i.e., 8.4.15)" /><br />
+          <input
+            type="text"
+            ref="image"
+            placeholder="Image URL" /><br />
+          <button
+            type="submit"
+            onClick={this.addLesson}>
+              Submit
+          </button>
+        </form>
+      </div>
+    );
   },
 
   render: function() {
     return (
       <div>
-      {!this.state.isCheckingPermissions ? this.renderAddLesson() : ''}
+      {this.state.isAdmin ? this.renderAddLesson() : ''}
       </div>
     );
   }

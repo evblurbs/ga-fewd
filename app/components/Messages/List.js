@@ -10,8 +10,7 @@ var List = React.createClass({
 
   observe: function() {
     return {
-      messages: (new Parse.Query("Message"))
-                  .ascending('createdAt')
+      messages: (new Parse.Query("Message")).ascending('createdAt')
     }
   },
 
