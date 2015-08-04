@@ -8,6 +8,8 @@ var RouteHandler = Router.RouteHandler;
 
 var Nav = require('./Nav');
 
+require('../../stylesheets/all.scss');
+
 var Main = React.createClass({
   mixins: [ParseReact.Mixin],
 
@@ -31,13 +33,15 @@ var Main = React.createClass({
     if(this.data.user) {
       return (
         <div>
-          <Nav />
+          <Nav user={true} />
           <RouteHandler />
         </div>
       );
     } else {
       return (
-        <a href="/login">Login</a>
+        <div>
+          <Nav user={false} />
+        </div>
       );
     }
   }

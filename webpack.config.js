@@ -29,7 +29,8 @@ var config = {
   module: {
     noParse: [],
     loaders: [
-      { test: /\.js$/, loader: 'jsx-loader' }
+      { test: /\.js$/, loader: 'jsx-loader' },
+      { test: /\.scss$/, loader: 'style!css!sass?sourceMap' }
     ]
   }
 };

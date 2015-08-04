@@ -1,0 +1,41 @@
+.nav {
+  padding: 40px 0 20px;
+  border-bottom: 1px solid $lightGray;
+  margin: 0 0 95px;
+
+  .welcome {
+    float: left;
+    color: $gray;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+
+  ul {
+    float: right;
+
+    li {
+      float: left;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: $black;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        display: block;
+        padding: 0 40px;
+        text-transform: uppercase;
+
+        &:last-child {
+          padding-right: 0;
+        }
+
+        &:hover {
+          color: $teal;
+        }
+      }
+    }
+  }
+}

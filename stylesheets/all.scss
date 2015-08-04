@@ -1,0 +1,15 @@
+@import '_colors.scss';
+@import '_type.scss';
+@import 'nav.scss';
+@import 'reset.scss';
+
+#app {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
