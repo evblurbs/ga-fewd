@@ -1,5 +1,5 @@
-* {
-  font-family: "Gotham SSm A", "Gotham SSm B";
+body, body * {
+  font-family: "Gotham SSm A", "Gotham SSm B", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: normal;
 }
 
@@ -7,12 +7,54 @@
   font-weight: 300;
 }
 
+.gothamBook {
+  font-weight: 400;
+}
+
 .gothamMedium {
   font-weight: 500;
 }
 
-.title {
+.fewd {
   color: $teal;
-  font-size: 28px;
+  font-size: 30px;
+  line-height: 34px;
   font-weight: 500;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 300;
+  color: $darkGray;
+  margin-bottom: 45px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 400;
+  margin: 0 0 24px;
+  color: $black;
+}
+
+h3 {
+  font-size: 18px;
+  color: $darkGray;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+
+p {
+  color: $black;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 24px;
+
+  &.lg {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 0 30px;
+  }
 }

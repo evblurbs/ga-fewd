@@ -1,0 +1,23 @@
+.lesson-item {
+  &:hover {
+    cursor: pointer;
+    h2 {
+      color: $teal;
+    }
+  }
+}
+
+.lesson-number {
+  float: left;
+}
+
+.lesson-info {
+  width: 600px;
+  float: right;
+}
+
+.date-pipe {
+  display: inline-block;
+  color: $teal;
+  padding: 0 10px;
+}

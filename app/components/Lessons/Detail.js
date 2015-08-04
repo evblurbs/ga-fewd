@@ -69,7 +69,7 @@ var Detail = React.createClass({
       return <Association key={item.id} data={item.attributes} />
     });
     return (
-      <ul>{homeworkList}</ul>
+      <ul className="list">{homeworkList}</ul>
     );
   },
 
@@ -78,7 +78,7 @@ var Detail = React.createClass({
       return <Association key={item.id} data={item.attributes} />
     });
     return (
-      <ul>{supplementalList}</ul>
+      <ul className="list">{supplementalList}</ul>
     );
   },
 
@@ -86,21 +86,23 @@ var Detail = React.createClass({
     if(this.state.lesson) {
       return(
         <div>
-          <h1>{this.state.attributes.title}</h1>
-          <p>{this.state.attributes.description}</p>
-          <div className="lesson-section">
-            <h2>Slides</h2>
-            <a href={this.state.attributes.slides} target="_blank" className="lesson-slides">View Slides</a>
+          <div className="header-section">
+            <h1>{this.state.attributes.title}</h1>
+            <p className="lg">{this.state.attributes.description}</p>
           </div>
-          <div className="lesson-section">
+          <div className="section-break clearfix">
+            <h2>Slides</h2>
+            <a href={this.state.attributes.slides} target="_blank" className="button">View Slides</a>
+          </div>
+          <div className="section-break clearfix">
             <h2>Homework</h2>
             {this.state.homework.length ? this.renderHomework() : '' }
-            <AddAssociation lesson={this.state.lesson} assocation="Homework" />
+            {/*<AddAssociation lesson={this.state.lesson} assocation="Homework" />*/}
           </div>
-          <div className="lesson-section">
+          <div className="section-break clearfix">
             <h2>Supplemental Work</h2>
             {this.state.supplemental.length ? this.renderSupplemental() : '' }
-            <AddAssociation lesson={this.state.lesson} assocation="Supplemental" />
+            {/*<AddAssociation lesson={this.state.lesson} assocation="Supplemental" />*/}
           </div>
         </div>
       );

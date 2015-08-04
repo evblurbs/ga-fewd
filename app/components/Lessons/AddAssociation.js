@@ -28,7 +28,6 @@ var AddAssociation = React.createClass({
 
   addAssocation: function(e) {
     e.preventDefault();
-    debugger;
     var title = React.findDOMNode(this.refs.title);
     var description = React.findDOMNode(this.refs.description);
     var link = React.findDOMNode(this.refs.link);
@@ -52,7 +51,7 @@ var AddAssociation = React.createClass({
 
   renderAddAssociation: function() {
     return (
-      <div>
+      <div className="clearfix">
         <h3>Add Association</h3>
         <form>
           <input

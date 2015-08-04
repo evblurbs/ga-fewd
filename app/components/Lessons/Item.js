@@ -14,10 +14,12 @@ var Item = React.createClass({
 
   render: function() {
     return (
-      <li className="lesson-item" onClick={this.gotoLesson}>
+      <li className="lesson-item clearfix section-break" onClick={this.gotoLesson}>
         <h2 className="lesson-number">{this.props.data.number}</h2>
-        <h2 className="lesson-title">{this.props.data.title}</h2>
-        <p>{this.props.data.date} <span>|</span> {this.formatDescription(this.props.data.description)}</p>
+        <div className="lesson-info">
+          <h2 className="lesson-title">{this.props.data.title}</h2>
+          <p>{this.props.data.date} <span className="date-pipe">|</span> {this.formatDescription(this.props.data.description)}</p>
+        </div>
       </li>
     );
   }

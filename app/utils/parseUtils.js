@@ -79,8 +79,11 @@ var parseUtils = {
 
   login: function(githubData) {
 
-  }
+  },
 
+  logout: function() {
+    Parse.User.logOut();
+  }
 };
 
 module.exports = parseUtils;

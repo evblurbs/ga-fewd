@@ -56,39 +56,43 @@ var AddLesson = React.createClass({
 
   renderAddLesson: function() {
     return (
-      <div>
-        <h2>Add Lesson</h2>
-        <form>
-          <input
-            type="text"
-            ref="title"
-            placeholder="Title" /><br />
-          <input
-            type="text"
-            ref="number"
-            placeholder="Lesson number (i.e., 01)" /><br />
-          <textarea
-            ref="description"
-            placeholder="description"></textarea><br />
-          <input
-            type="text"
-            ref="slides"
-            placeholder="Slides" /><br />
-          <input
-            type="text"
-            ref="lessonDate"
-            placeholder="Date (i.e., 8.4.15)" /><br />
-          <input
-            type="text"
-            ref="image"
-            placeholder="Image URL" /><br />
-          <button
-            type="submit"
-            onClick={this.addLesson}>
-              Submit
-          </button>
-        </form>
-      </div>
+      <ul>
+        <li className="lesson-item clearfix section-break">
+          <div className="lesson-info">
+            <h2>Add Lesson</h2>
+            <form>
+              <input
+                type="text"
+                ref="title"
+                placeholder="Title" /><br />
+              <input
+                type="text"
+                ref="number"
+                placeholder="Lesson number (i.e., 01)" /><br />
+              <textarea
+                ref="description"
+                placeholder="description"></textarea><br />
+              <input
+                type="text"
+                ref="slides"
+                placeholder="Slides" /><br />
+              <input
+                type="text"
+                ref="lessonDate"
+                placeholder="Date (i.e., 8.4.15)" /><br />
+              <input
+                type="text"
+                ref="image"
+                placeholder="Image URL" /><br />
+              <button
+                type="submit"
+                onClick={this.addLesson}>
+                  Submit
+              </button>
+            </form>
+          </div>
+        </li>
+      </ul>
     );
   },
 

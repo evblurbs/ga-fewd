@@ -1,15 +1,70 @@
+@import 'reset.scss';
 @import '_colors.scss';
 @import '_type.scss';
+@import 'grid.scss';
 @import 'nav.scss';
-@import 'reset.scss';
+@import 'footer.scss';
+@import 'lessons.scss';
+@import 'button.scss';
+@import 'list.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app,
+.page-wrap {
+  height: 100%;
+}
+
+.content {
+  min-height: 100%;
+  margin-bottom: -55px;
+  padding-bottom: 100px;
+}
+
+body {
+  overflow-y: scroll;
+}
 
 #app {
   width: 960px;
   margin: 0 auto;
 }
 
+
 .group:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+.home {
+  .header-section {
+    h2 {
+      font-size: 24px;
+      float: left;
+    }
+    a {
+      float: right;
+    }
+  }
+  .section-break {
+    border-top: none;
+  }
 }

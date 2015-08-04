@@ -3,7 +3,7 @@ var React = require('react');
 var Assocation = React.createClass({
   renderLink: function() {
     return(
-      <a href={this.props.data.link} target="_blank">{this.props.data.linkText}</a>
+      <a href={this.props.data.link} target="_blank" className="list-link">{this.props.data.linkText}</a>
     );
   },
 
