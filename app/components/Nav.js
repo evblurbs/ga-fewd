@@ -23,7 +23,7 @@ var Nav = React.createClass({
             {this.renderWelcome()}
             <ul>
               <li>
-                <Link to="lessons">Lessons</Link>
+                <Link to="home">Lessons</Link>
               </li>
               <li>
                 <Link to="logout">Logout</Link>

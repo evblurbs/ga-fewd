@@ -10,7 +10,7 @@ var Logout = require('../components/Logout');
 
 var routes = (
   <Route handler={Main} >
-    <Route name="home" path="/" handler={Home} />
+    <Route name="home" path="/" handler={Lessons} />
     <Route name="messages" path="/messages" handler={Messages} />
     <Route name="lessons" path="/lessons" handler={Lessons} />
     <Route name="lessonDetail" path="/lessons/:id" handler={LessonDetail} />
