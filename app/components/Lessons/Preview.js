@@ -1,7 +1,7 @@
 var React = require('react');
 var Router = require('react-router');
 
-var Item = React.createClass({
+var Preview = React.createClass({
   mixins : [Router.Navigation],
 
   gotoLesson: function() {
@@ -25,4 +25,4 @@ var Item = React.createClass({
   }
 });
 
-module.exports = Item;
+module.exports = Preview;
