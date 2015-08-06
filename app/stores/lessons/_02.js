@@ -1,48 +1,52 @@
 var _02 = {
   title: "HTML and CSS",
-  description: "In this lesson, we will go over GitHub - how our class will use it and how it's used throughout the industry. After setting up GitHub, we'll jump into HTML. This will be a review if you went through Dash or had some experience with HTML in the past. We will cover the structure of HTML and how it is meant to be declarative of your content. Depending how fast we go through the content, we may cover other ways to use Git and GitHub, the course website and structure, and any general questions.",
-  slides: "/01-basics-html.md",
+  description: "In this lesson, we will review HTML further - going over the image tag and the differences between absolute and relative paths. The majority of the class will be an intro to CSS. We will go over the syntax used to write CSS, where CSS lives on your website, and different types of CSS selectors. We will also review CSS Inheritance and Specificity. The last part of the class will be lab time to start your homework, where you will implement the concepts we covered by creating a portfolio website.",
+  slides: "/02-basics-css.md",
   number: "02",
-  lesson: 1,
   date: '8.6.15',
-  homework: [
+  Homework: [
     {
-      title: "Dash",
-      url: "https://dash.generalassemb.ly/",
-      urlText: "https://dash.generalassemb.ly/",
-      description: "Dash teaches HTML, CSS, and Javascript through fun projects you can do in your browser. Each task should be pretty straight forward - telling you directly what to code."
+      title: "Coding: HTML/CSS Basics",
+      url: "https://github.com/ga-students/SEA-FEWD-5/tree/master/Week_01_Basics/Assignment",
+      urlText: "Portfolio Website",
+      description: "In this assignment, you will be creating a portfolio website. Click on the link above to read more."
     },
     {
-      title: "Cookie Recipe",
-      url: "https://github.com/ga-students/SEA-FEWD-5/tree/master/Week_01_Basics/01_html_basics/starter_code/cookie_recipe",
-      urlText: "Starter Code",
-      description: "Create an HTML document from the text in the starter code. The text should be wrapped with HTML tags that you find to be appropriate. Remember, HTML is supposed to be declarative. Ask yourself what is each piece of content in relationship to the structure of the whole HTML page."
+      title: "Reading",
+      url: "http://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/",
+      urlText: "CSS Specificity: Things You Should Know",
+      description: "This article goes over CSS Specificity some more. The article mentions pseudo-classes and pseudo-elements - don't get hung up on those. We will review those later."
     },
     {
-      title: "Getting Started with GitHub",
-      url: "https://github.com/ga-students/SEA-FEWD-5/raw/master/Week_00_GitHub/Getting_Started_With_GitHub.pdf",
-      urlText: "PDF Download",
-      description: "If you haven't read through the pre-work on GitHub, make sure to review this PDF. It can also be found in our classes repository."
+      title: "Reading",
+      url: "https://css-tricks.com/how-css-selectors-work/",
+      urlText: "How CSS Selectors Work",
+      description: "This article describes the CSS selectors we covered in class, and a few additional ones."
     }
   ],
-  supplemental: [
+  Supplemental: [
     {
-      title: "The VERY Basics",
-      url: "https://css-tricks.com/video-screencasts/58-html-css-the-very-basics/",
-      urlText: "CSS-Tricks Screencast",
-      description: "This screencast is somewhat old, but not a whole lot has changed with the basics of HTML and CSS. You'll notice how the DOCTYPE tag has gotten easier to implement from the screencast."
+      title: "Reading",
+      url: "https://css-tricks.com/the-cms-analogy/",
+      urlText: "CSS is to HTML as a CMS is to… HTML",
+      description: "This article goes over the advantages of using external CSS files."
+    }
+  ],
+  Links: [
+    {
+      url: "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference",
+      urlText: "MDN: CSS reference",
+      description: "Mozilla Developer Network keeps a list of all the CSS selectors available for you to use."
     },
     {
-      title: "Git Command Line",
-      url: "https://git-scm.com/",
-      urlText: "https://git-scm.com/",
-      description: "If you'd like to use Git via the command line, download Git here. There should be a link on the right side that matches the OS you use."
+      url: "http://paletton.com/",
+      urlText: "Paletton",
+      description: "Don't have all the hexcodes memorized? No problem! Use Paletton to choose a color pallet for your website (we all use some reference)."
     },
     {
-      title: "Try Git",
-      url: "https://www.codeschool.com/courses/try-git",
-      urlText: "Code School",
-      description: "Code School published a free tutorial on using Git. It is similar to Dash, in that you code along with the lesson. This will help you understand the terminology and various concepts more. Please note that you'll need to install Git to use the command line tools. These command line tools would replace the Git app we downloaded in class."
+      url: "http://hex.colorrrs.com/",
+      urlText: "COLORRRS",
+      description: "When you want to add an alpha filter to declar opacity, you'll need to convert your color's hexcode to rgb. COLORRS does the conversions for you."
     }
   ]
 };

@@ -14,6 +14,15 @@ var Detail = React.createClass({
     }
   },
 
+  renderSection: function(section) {
+    return (
+      <div className="section-break clearfix">
+        <h2>{section}</h2>
+        <Associations list={this.state.data[section]} />
+      </div>
+    );
+  },
+
   render: function() {
     if(this.state.data) {
       return(
@@ -26,14 +35,9 @@ var Detail = React.createClass({
             <h2>Slides</h2>
             <a href={this.state.data.slides} target="_blank" className="button">View Slides</a>
           </div>
-          <div className="section-break clearfix">
-            <h2>Homework</h2>
-            {this.state.data.homework.length ? <Associations list={this.state.data.homework} /> : '' }
-          </div>
-          <div className="section-break clearfix">
-            <h2>Supplemental Work</h2>
-            {this.state.data.supplemental.length ? <Associations list={this.state.data.supplemental} /> : '' }
-          </div>
+          {this.state.data.Homework ? this.renderSection('Homework') : '' }
+          {this.state.data.Supplemental ? this.renderSection('Supplemental') : '' }
+          {this.state.data.Links ? this.renderSection('Links') : '' }
         </div>
       );
     }
