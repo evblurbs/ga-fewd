@@ -46,7 +46,7 @@ var _02 = {
     {
       url: "http://hex.colorrrs.com/",
       urlText: "COLORRRS",
-      description: "When you want to add an alpha filter to declar opacity, you'll need to convert your color's hexcode to rgb. COLORRS does the conversions for you."
+      description: "When you want to add an alpha filter to declare opacity, you'll need to convert your color's hexcode to rgb. COLORRS does the conversions for you."
     }
   ]
 };

@@ -43,6 +43,13 @@ var _01 = {
       urlText: "Try Git",
       description: "Code School published a free tutorial on using Git. It is similar to Dash, in that you code along with the lesson. This will help you understand the terminology and various concepts more. Please note that you'll need to install Git to use the command line tools. These command line tools would replace the Git app we downloaded in class."
     }
+  ],
+  Links: [
+    {
+      url: "https://github.com/ga-students/SEA-FEWD-5",
+      urlText: "Student Repository",
+      description: "This is the Student Repository for the class. Make sure to have a clone of this repository on your computer. New material will be added (i.e. starter code, resources, etc.) throughout the class, and you'll need to sync/pull the updates from the repository to your local repository."
+    }
   ]
 };
 
