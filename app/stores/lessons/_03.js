@@ -22,6 +22,12 @@ var _03 = {
       url: "https://css-tricks.com/box-sizing/",
       urlText: "CSS Tricks: Box Sizing",
       description: "We will be using the border-box value for the box-sizing property. This article explains the differences between that value and others."
+    },
+    {
+      title: "Reading",
+      url: "http://cssreset.com/what-is-a-css-reset/",
+      urlText: "What is a CSS Reset?",
+      description: "Read this article that further explains the benefits of a CSS reset."
     }
   ],
   Supplemental: [
@@ -30,6 +36,13 @@ var _03 = {
       url: "http://www.sitepoint.com/web-foundations/css-box-model/",
       urlText: "Sitepoint: The CSS Box Model",
       description: "If you are still confused about the CSS Box Model, a third review from yet another perspective might be helpful."
+    }
+  ],
+  Links: [
+    {
+      url: "http://cssreset.com/",
+      urlText: "CSS Reset",
+      description: "CSS Reset lists the most popular CSS resets, and links to the code for each."
     }
   ]
 };
