@@ -207,9 +207,9 @@ Review common themes.
 
 ### Border Box
 
-#### <!--- .element: class="fragment" data-fragment-index="1" -->Width = width + padding-left + padding-right + border-left + border-right
+#### <!--- .element: class="fragment" data-fragment-index="1" -->Total Width = width + padding-left + padding-right + border-left + border-right
 
-#### <!--- .element: class="fragment" data-fragment-index="2" -->Height = height + padding-top + padding-bottom + border-top + border-bottom
+#### <!--- .element: class="fragment" data-fragment-index="2" -->Total Height = height + padding-top + padding-bottom + border-top + border-bottom
 
 ----
 
