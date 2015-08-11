@@ -1,6 +1,7 @@
 var appConstants = require('../constants/appConstants');
 var https = require('https');
 var parseUtils = require('./parseUtils');
+var axios = require('axios');
 
 var githubUtils = {
 
@@ -34,31 +35,13 @@ var githubUtils = {
   },
 
   getEmail: function(user) {
-    var options = {
-      hostname: appConstants.GITHUB_HOSTNAME,
-      path: appConstants.GITHUB_API_EMAILS + user.attributes.access_token,
-      method: 'GET',
-      headers: {
-        'User-Agent': appConstants.GITHUB_UA
-      }
-    };
-
-    var req = https.request(options, function(res) {
-      var body = '';
-      res.on('data', function(d) {
-        body += d;
+    axios.get(appConstants.GITHUB_API_EMAILS + user.attributes.access_token)
+      .then(function(response) {
+        console.log(response.data);
+      })
+      .catch(function(response) {
+        console.log(response);
       });
-      res.on('end', function() {
-        var emails = JSON.parse(body);
-        console.log("EMAILS: " + emails + "\n");
-      });
-    });
-    req.end();
-    req.on('error', function(e) {
-      process.stdout.write("ERROR: " + e + "\n");
-    });
-
-    return true;
   },
 
   fetchEmail: function() {
