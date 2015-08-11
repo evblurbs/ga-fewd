@@ -34,18 +34,23 @@ var githubUtils = {
 
   },
 
-  getEmail: function(user) {
+  getEmail: function(user, cb) {
+    // save email callback
+    this.emailCb = cb;
+    this.user = user;
     axios.get(appConstants.GITHUB_API_EMAILS + user.attributes.access_token)
       .then(function(response) {
-        console.log(response.data);
-      })
+        response.data.forEach(function(item) {
+          if(item.primary) {
+            this.emailCb(this.user, {
+              email: item.email
+            });
+          }
+        }.bind(this));
+      }.bind(this))
       .catch(function(response) {
         console.log(response);
       });
-  },
-
-  fetchEmail: function() {
-    process.stdout.write("fetching email...");
   }
 }
 

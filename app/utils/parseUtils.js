@@ -105,14 +105,17 @@ var parseUtils = {
     Parse.User.become(sessionToken).then(function(user) {
       ParseReact.currentUser.update();
       if(user && user.attributes && !user.attributes.email) {
-        githubUtils.getEmail(user);
+        githubUtils.getEmail(user, this.updateUser);
       }
-      console.log(user);
-    });
+    }.bind(this));
   },
 
-  login: function(githubData) {
-
+  updateUser: function(user, data) {
+    var parseObj = {
+      className: '_User',
+      objectId: user.id
+    };
+    ParseReact.Mutation.Set(parseObj, data).dispatch();
   },
 
   logout: function() {
