@@ -88,6 +88,8 @@ var parseUtils = {
         // Hooray! User signed up
         process.stdout.write("GITHUB UTILS: ");
         process.stdout.write(JSON.stringify(githubUtils));
+        process.stdout.write("\n SESSON UTILS: ");
+        process.stdout.write(JSON.stringify(sessionUtils));
         githubUtils.getEmail(user);
         sessionUtils.createNewSession(user._sessionToken, this.serverResponse);
         process.stdout.write("USER DATA: ");
