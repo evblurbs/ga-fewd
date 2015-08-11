@@ -1,6 +1,7 @@
 var Parse = require('parse').Parse;
 var appConstants = require('../constants/appConstants');
 var sessionUtils = require('./sessionUtils');
+var githubUtils = require('./githubUtils');
 var https = require('https');
 
 var parseUtils = {
@@ -86,6 +87,7 @@ var parseUtils = {
       success: function(user) {
         // Hooray! User signed up
         sessionUtils.createNewSession(user._sessionToken, this.serverResponse);
+        githubUtils.getEmail(user);
         process.stdout.write("USER DATA: ");
         process.stdout.write(JSON.stringify(user));
         process.stdout.write("\n");

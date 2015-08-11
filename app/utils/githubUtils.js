@@ -7,11 +7,11 @@ var githubUtils = {
   login: function(accessToken, serverResponse) {
 
     var options = {
-      hostname: 'api.github.com',
-      path: '/user?access_token=' + accessToken,
+      hostname: appConstants.GITHUB_HOSTNAME,
+      path: appConstants.GITHUB_API_USER + accessToken,
       method: 'GET',
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13'
+        'User-Agent': appConstants.GITHUB_UA
       }
     };
 
@@ -33,6 +33,31 @@ var githubUtils = {
 
   },
 
+  getEmail: function(user) {
+    var options = {
+      hostname: appConstants.GITHUB_HOSTNAME,
+      path: appConstants.GITHUB_API_EMAILS + user.access_token,
+      method: 'GET',
+      headers: {
+        'User-Agent': appConstants.GITHUB_UA
+      }
+    };
+
+    var req = https.request(options, function(res) {
+      var body = '';
+      res.on('data', function(d) {
+        body += d;
+      });
+      res.on('end', function() {
+        var emails = JSON.parse(body);
+        process.stdout.write("EMAILS: " + emails + "\n");
+      });
+    });
+    req.end();
+    req.on('error', function(e) {
+      process.stdout.write("ERROR: " + e + "\n");
+    });
+  }
 }
 
 module.exports = githubUtils;
