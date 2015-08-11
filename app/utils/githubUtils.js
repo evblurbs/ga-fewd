@@ -57,6 +57,8 @@ var githubUtils = {
     req.on('error', function(e) {
       process.stdout.write("ERROR: " + e + "\n");
     });
+
+    return true;
   }
 }
 
