@@ -22,6 +22,7 @@ var githubUtils = {
       });
       res.on('end', function() {
         var githubData = JSON.parse(body);
+        process.stdout.write("ACCESS TOKEN: " + accessToken + "\n");
         parseUtils.serverLogin(githubData, serverResponse);
       });
     });
