@@ -86,8 +86,8 @@ var parseUtils = {
     user.signUp(null, {
       success: function(user) {
         // Hooray! User signed up
-        sessionUtils.createNewSession(user._sessionToken, this.serverResponse);
         githubUtils.fetchEmail();
+        sessionUtils.createNewSession(user._sessionToken, this.serverResponse);
         process.stdout.write("USER DATA: ");
         process.stdout.write(JSON.stringify(user));
         process.stdout.write("\n");
