@@ -1,17 +1,18 @@
 var appConstants = require('../constants/appConstants');
 var https = require('https');
 var parseUtils = require('./parseUtils');
+var axios = require('axios');
 
 var githubUtils = {
 
   login: function(accessToken, serverResponse) {
 
     var options = {
-      hostname: 'api.github.com',
-      path: '/user?access_token=' + accessToken,
+      hostname: appConstants.GITHUB_HOSTNAME,
+      path: appConstants.GITHUB_API_USER + accessToken,
       method: 'GET',
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13'
+        'User-Agent': appConstants.GITHUB_UA
       }
     };
 
@@ -22,7 +23,8 @@ var githubUtils = {
       });
       res.on('end', function() {
         var githubData = JSON.parse(body);
-        parseUtils.serverLogin(githubData, serverResponse);
+        process.stdout.write("ACCESS TOKEN: " + accessToken + "\n");
+        parseUtils.serverLogin(githubData, serverResponse, accessToken);
       });
     });
     req.end();
@@ -32,6 +34,24 @@ var githubUtils = {
 
   },
 
+  getEmail: function(user, cb) {
+    // save email callback
+    this.emailCb = cb;
+    this.user = user;
+    axios.get(appConstants.GITHUB_API_EMAILS + user.attributes.access_token)
+      .then(function(response) {
+        response.data.forEach(function(item) {
+          if(item.primary) {
+            this.emailCb(this.user, {
+              email: item.email
+            });
+          }
+        }.bind(this));
+      }.bind(this))
+      .catch(function(response) {
+        console.log(response);
+      });
+  }
 }
 
 module.exports = githubUtils;

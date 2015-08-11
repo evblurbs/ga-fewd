@@ -1,12 +1,14 @@
 var Parse = require('parse').Parse;
+var ParseReact = require('parse-react');
 var appConstants = require('../constants/appConstants');
 var sessionUtils = require('./sessionUtils');
+var githubUtils = require('./githubUtils');
 var https = require('https');
 
 var parseUtils = {
   // function for server side code
   // to call to check if a user exists
-  serverLogin: function(githubData, serverResponse) {
+  serverLogin: function(githubData, serverResponse, accessToken) {
     var _this = this;
 
     // Initialize Parse for Server Side queries
@@ -21,6 +23,7 @@ var parseUtils = {
     this.githubData = githubData;
     this.serverResponse = serverResponse;
     this.sessionUtils = sessionUtils;
+    this.accessToken = accessToken;
 
     var path = '/1/login?username=';
     path += encodeURIComponent(githubData.login);
@@ -50,35 +53,69 @@ var parseUtils = {
         if(jsonResponse.sessionToken) {
           this.sessionUtils.createNewSession(jsonResponse.sessionToken, this.serverResponse);
         } else {
-          this.serverSignUp();
+          this.serverSignUp(this.accessToken);
         }
       }.bind(this));
     }.bind(this));
   },
 
-  serverSignUp: function() {
+  serverSignUp: function(accessToken) {
 
     var user = new Parse.User();
-    user.set("username", this.githubData.login);
-    user.set("password", String(this.githubData.id));
-    user.set("email", this.githubData.email);
-    user.set("avatar_url", this.githubData.avatar_url);
-    user.set("name", this.githubData.name);
-    user.set("location", this.githubData.location);
+    var data = this.githubData;
+    user.set("username", data.login);
+    user.set("password", String(data.id));
+    if(data.email && data.email.length) {
+      user.set("email", data.email);
+    };
+    if(data.avatar_url && data.avatar_url.length) {
+      user.set("avatar_url", data.avatar_url);
+    }
+    if(data.name && data.name.length) {
+      user.set("name", data.name);
+    }
+    if(data.location && data.location.length) {
+      user.set("location", data.location);
+    }
+    if(accessToken && accessToken.length) {
+      user.set("access_token", accessToken);
+    }
+
+    process.stdout.write("RETURN DATA: \n");
+    process.stdout.write(JSON.stringify(data));
 
     user.signUp(null, {
       success: function(user) {
         // Hooray! User signed up
         sessionUtils.createNewSession(user._sessionToken, this.serverResponse);
+        process.stdout.write("USER DATA: ");
+        process.stdout.write(JSON.stringify(user));
+        process.stdout.write("\n");
       }.bind(this),
       error: function(user, error) {
         console.log("Error: " + error.code + " " + error.message);
+        process.stdout.write("ERROR SIGNING UP: ");
+        process.stdout.write("Error signing up user: ");
+        process.stdout.write(error.code + " " + error.message);
       }
     });
   },
 
-  login: function(githubData) {
+  clientLogin: function(sessionToken) {
+    Parse.User.become(sessionToken).then(function(user) {
+      ParseReact.currentUser.update();
+      if(user && user.attributes && !user.attributes.email) {
+        githubUtils.getEmail(user, this.updateUser);
+      }
+    }.bind(this));
+  },
 
+  updateUser: function(user, data) {
+    var parseObj = {
+      className: '_User',
+      objectId: user.id
+    };
+    ParseReact.Mutation.Set(parseObj, data).dispatch();
   },
 
   logout: function() {

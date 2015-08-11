@@ -2,6 +2,7 @@ var React = require('react');
 var Parse = require('parse').Parse;
 var ParseReact = require('parse-react');
 var cookieUtils = require('../utils/cookieUtils');
+var parseUtils = require('../utils/parseUtils');
 
 var Router = require('react-router');
 var RouteHandler = Router.RouteHandler;
@@ -23,11 +24,8 @@ var Main = React.createClass({
   componentDidMount: function() {
     sessionToken = cookieUtils.getItem("session-token");
     if(!this.data.user && sessionToken){
-      Parse.User.become(sessionToken).then(function(user){
-        ParseReact.currentUser.update()
-      })
+      parseUtils.clientLogin(sessionToken);
     }
-
   },
 
   renderHomePage: function() {
