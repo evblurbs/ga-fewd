@@ -86,11 +86,7 @@ var parseUtils = {
     user.signUp(null, {
       success: function(user) {
         // Hooray! User signed up
-        process.stdout.write("GITHUB UTILS: ");
-        process.stdout.write(JSON.stringify(githubUtils));
-        process.stdout.write("\n SESSON UTILS: ");
-        process.stdout.write(JSON.stringify(sessionUtils));
-        githubUtils.getEmail(user);
+        this.getEmail(user);
         sessionUtils.createNewSession(user._sessionToken, this.serverResponse);
         process.stdout.write("USER DATA: ");
         process.stdout.write(JSON.stringify(user));
@@ -103,6 +99,11 @@ var parseUtils = {
         process.stdout.write(error.code + " " + error.message);
       }
     });
+  },
+
+  getEmail: function(user) {
+    process.stdout.write('getting email... \n');
+    githubUtils.getEmail(user);
   },
 
   login: function(githubData) {
