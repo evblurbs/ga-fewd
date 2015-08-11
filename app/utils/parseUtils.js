@@ -104,13 +104,11 @@ var parseUtils = {
   clientLogin: function(sessionToken) {
     Parse.User.become(sessionToken).then(function(user) {
       ParseReact.currentUser.update();
+      if(user && user.attributes && !user.attributes.email) {
+        githubUtils.getEmail(user);
+      }
       console.log(user);
     });
-  },
-
-  getEmail: function(user) {
-    process.stdout.write('getting email... \n');
-    githubUtils.getEmail(user);
   },
 
   login: function(githubData) {

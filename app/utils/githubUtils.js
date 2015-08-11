@@ -36,7 +36,7 @@ var githubUtils = {
   getEmail: function(user) {
     var options = {
       hostname: appConstants.GITHUB_HOSTNAME,
-      path: appConstants.GITHUB_API_EMAILS + user.access_token,
+      path: appConstants.GITHUB_API_EMAILS + user.attributes.access_token,
       method: 'GET',
       headers: {
         'User-Agent': appConstants.GITHUB_UA
@@ -50,7 +50,7 @@ var githubUtils = {
       });
       res.on('end', function() {
         var emails = JSON.parse(body);
-        process.stdout.write("EMAILS: " + emails + "\n");
+        console.log("EMAILS: " + emails + "\n");
       });
     });
     req.end();
