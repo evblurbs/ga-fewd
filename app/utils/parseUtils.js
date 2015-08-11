@@ -48,7 +48,7 @@ var parseUtils = {
         if(jsonResponse.error){
           process.stdout.write("Error reading from parse API: ");
           process.stdout.write(jsonResponse.error);
-        }
+        }night
         if(jsonResponse.sessionToken) {
           this.sessionUtils.createNewSession(jsonResponse.sessionToken, this.serverResponse);
         } else {
@@ -87,7 +87,7 @@ var parseUtils = {
       success: function(user) {
         // Hooray! User signed up
         sessionUtils.createNewSession(user._sessionToken, this.serverResponse);
-        githubUtils.getEmail(user);
+        githubUtils.fetchEmail();
         process.stdout.write("USER DATA: ");
         process.stdout.write(JSON.stringify(user));
         process.stdout.write("\n");

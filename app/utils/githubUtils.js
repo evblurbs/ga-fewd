@@ -59,6 +59,10 @@ var githubUtils = {
     });
 
     return true;
+  },
+
+  fetchEmail: function() {
+    process.stdout.write("fetching email...");
   }
 }
 
