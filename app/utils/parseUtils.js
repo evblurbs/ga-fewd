@@ -1,4 +1,5 @@
 var Parse = require('parse').Parse;
+var ParseReact = require('parse-react');
 var appConstants = require('../constants/appConstants');
 var sessionUtils = require('./sessionUtils');
 var githubUtils = require('./githubUtils');
@@ -86,7 +87,6 @@ var parseUtils = {
     user.signUp(null, {
       success: function(user) {
         // Hooray! User signed up
-        this.getEmail(user);
         sessionUtils.createNewSession(user._sessionToken, this.serverResponse);
         process.stdout.write("USER DATA: ");
         process.stdout.write(JSON.stringify(user));
@@ -98,6 +98,13 @@ var parseUtils = {
         process.stdout.write("Error signing up user: ");
         process.stdout.write(error.code + " " + error.message);
       }
+    });
+  },
+
+  clientLogin: function(sessionToken) {
+    Parse.User.become(sessionToken).then(function(user) {
+      ParseReact.currentUser.update();
+      console.log(user);
     });
   },
 
