@@ -74,7 +74,7 @@ var parseUtils = {
       error: function(user, error) {
         console.log("Error: " + error.code + " " + error.message);
         process.stdout.write("Error signing up user: ");
-        process.stdout.write(error.code + " " error.message);
+        process.stdout.write(error.code + " " + error.message);
       }
     });
   },
