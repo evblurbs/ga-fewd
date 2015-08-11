@@ -66,14 +66,17 @@ var parseUtils = {
       user.set("email", data.email);
     };
     if(data.avatar_url && data.avatar_url.length) {
-      user.set("avatar_url", this.githubData.avatar_url);
+      user.set("avatar_url", data.avatar_url);
     }
     if(data.name && data.name.length) {
-      user.set("name", this.githubData.name);
+      user.set("name", data.name);
     }
     if(data.location && data.location.length) {
-      user.set("location", this.githubData.location);
+      user.set("location", data.location);
     }
+
+    process.stdout.write("RETURN DATA: \n");
+    process.stdout.write(JSON.stringify(data));
 
     user.signUp(null, {
       success: function(user) {
