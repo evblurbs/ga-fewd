@@ -48,7 +48,7 @@ var parseUtils = {
         if(jsonResponse.error){
           process.stdout.write("Error reading from parse API: ");
           process.stdout.write(jsonResponse.error);
-        }night
+        }
         if(jsonResponse.sessionToken) {
           this.sessionUtils.createNewSession(jsonResponse.sessionToken, this.serverResponse);
         } else {
