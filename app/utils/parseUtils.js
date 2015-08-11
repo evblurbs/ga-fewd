@@ -59,12 +59,21 @@ var parseUtils = {
   serverSignUp: function() {
 
     var user = new Parse.User();
-    user.set("username", this.githubData.login);
-    user.set("password", String(this.githubData.id));
-    user.set("email", this.githubData.email);
-    user.set("avatar_url", this.githubData.avatar_url);
-    user.set("name", this.githubData.name);
-    user.set("location", this.githubData.location);
+    var data = this.githubData;
+    user.set("username", data.login);
+    user.set("password", String(data.id));
+    if(data.email && data.email.length) {
+      user.set("email", data.email);
+    };
+    if(data.avatar_url && data.avatar_url.length) {
+      user.set("avatar_url", this.githubData.avatar_url);
+    }
+    if(data.name && data.name.length) {
+      user.set("name", this.githubData.name);
+    }
+    if(data.location && data.location.length) {
+      user.set("location", this.githubData.location);
+    }
 
     user.signUp(null, {
       success: function(user) {
