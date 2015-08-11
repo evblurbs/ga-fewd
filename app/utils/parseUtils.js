@@ -6,7 +6,7 @@ var https = require('https');
 var parseUtils = {
   // function for server side code
   // to call to check if a user exists
-  serverLogin: function(githubData, serverResponse) {
+  serverLogin: function(githubData, serverResponse, accessToken) {
     var _this = this;
 
     // Initialize Parse for Server Side queries
@@ -21,6 +21,7 @@ var parseUtils = {
     this.githubData = githubData;
     this.serverResponse = serverResponse;
     this.sessionUtils = sessionUtils;
+    this.accessToken = accessToken;
 
     var path = '/1/login?username=';
     path += encodeURIComponent(githubData.login);
@@ -50,13 +51,13 @@ var parseUtils = {
         if(jsonResponse.sessionToken) {
           this.sessionUtils.createNewSession(jsonResponse.sessionToken, this.serverResponse);
         } else {
-          this.serverSignUp();
+          this.serverSignUp(this.accessToken);
         }
       }.bind(this));
     }.bind(this));
   },
 
-  serverSignUp: function() {
+  serverSignUp: function(accessToken) {
 
     var user = new Parse.User();
     var data = this.githubData;
@@ -74,6 +75,9 @@ var parseUtils = {
     if(data.location && data.location.length) {
       user.set("location", data.location);
     }
+    if(accessToken && accessToken.length) {
+      user.set("access_token", accessToken);
+    }
 
     process.stdout.write("RETURN DATA: \n");
     process.stdout.write(JSON.stringify(data));
@@ -82,6 +86,9 @@ var parseUtils = {
       success: function(user) {
         // Hooray! User signed up
         sessionUtils.createNewSession(user._sessionToken, this.serverResponse);
+        process.stdout.write("USER DATA: ");
+        process.stdout.write(JSON.stringify(user));
+        process.stdout.write("\n");
       }.bind(this),
       error: function(user, error) {
         console.log("Error: " + error.code + " " + error.message);
