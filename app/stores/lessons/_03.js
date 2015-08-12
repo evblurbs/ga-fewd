@@ -7,7 +7,7 @@ var _03 = {
   Homework: [
     {
       title: "Coding: Box Model",
-      url: "https://github.com/generalassembly-studio/FEWD_Curriculum/tree/master/Week_02_Styling/Assignment",
+      url: "https://github.com/ga-students/SEA-FEWD-5/tree/master/Week_02_Styling/Assignment",
       urlText: "Relaxr",
       description: "In this assignment, you will create the landing page of a NY startup named Relaxr. To create this landing page, you'll need to implement rules of the box model (i.e. padding, border, margin)."
     },
