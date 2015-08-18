@@ -9,7 +9,7 @@ var _05 = {
       title: "Coding: Relaxr Blog",
       url: "https://github.com/ga-students/SEA-FEWD-5/tree/master/Week_03_Layout/Assignment",
       urlText: "Relaxr Blog Assignment",
-      description: "Try and create each layout in the PDF linked above. Remember the CSS float property can have a value of left or right. To clear floats, you can set the CSS property clear to left, right, or both."
+      description: "Read through the instructions on the assignment. You will be making a blog for Relaxr. You can start with your previous code for the Relaxr assignment, or start fresh with the starter code provided. We will start this assignment during lab time."
     },
     {
       title: "Reading",
@@ -21,7 +21,28 @@ var _05 = {
       title: "Reading",
       url: "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/README.md#you-dont-know-js-up--going",
       urlText: "You Don't Know JS: Up & Going",
-      description: "By "
+      description: "By 8.27.15, please read chapters one and two of this book. It will be very helpful as we dive into JavaScript and programming."
+    },
+    {
+      title: "Videos",
+      url: "https://generalassemb.ly/online/videos/what-can-you-do-with-javascript",
+      urlText: "What can you do with JavaScript?",
+      description: "By 8.27.15, please watch these screencasts. They will give you a broader view of JavaScript and what it is capable of."
+    }
+  ],
+  Supplemental: [
+    {
+      title: "Reading",
+      url: "http://www.w3schools.com/CSS/CSS_pseudo_classes.asp",
+      urlText: "CSS Pseudo-classes",
+      description: "Another article that covers CSS Pseudo-classes. Please read this if you need further clarification."
+    }
+  ],
+  Links: [
+    {
+      url: "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes",
+      urlText: "MDN: Pseudo-classes",
+      description: "Mozilla Developer Network lists all the Pseudo-classes available to use."
     }
   ]
 };
