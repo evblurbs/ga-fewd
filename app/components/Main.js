@@ -48,7 +48,7 @@ var Main = React.createClass({
       return (
         <div className="page-wrap">
           <div className="content">
-            <Nav user={true} />
+            <Nav user={this.data.user} />
             <RouteHandler />
           </div>
           <Footer />

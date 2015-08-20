@@ -9,6 +9,19 @@ var Nav = React.createClass({
     );
   },
 
+  renderWelcomeUser: function() {
+    var divStyle = {
+      backgroundImage: 'url(' + this.props.user.avatar_url + ')'
+    };
+
+    return (
+      <Link to="profile" className="welcome">
+        <span id='avatar' style={divStyle}></span>
+        welcome, {this.props.user.username}
+      </Link>
+    );
+  },
+
   renderFEWDTitle: function() {
     return (
       <span className="fewd">FEWD</span>
@@ -20,7 +33,7 @@ var Nav = React.createClass({
       return (
         <div>
           <nav className="nav group">
-            {this.renderWelcome()}
+            {this.renderWelcomeUser()}
             <ul>
               <li>
                 <Link to="home">Lessons</Link>

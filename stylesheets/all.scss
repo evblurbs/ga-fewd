@@ -22,7 +22,7 @@ body,
 .content {
   min-height: 100%;
   margin-bottom: -55px;
-  padding-bottom: 100px;
+  padding-bottom: 55px;
 }
 
 body {
@@ -67,4 +67,12 @@ body {
   .section-break {
     border-top: none;
   }
+}
+
+form {
+  margin: 0 0 24px;
+}
+
+.mb {
+  margin-bottom: 24px;
 }
