@@ -26,10 +26,23 @@ var _06 = {
   ],
   Supplemental: [
     {
+      title: "Coding",
+      url: "https://github.com/ga-students/SEA-FEWD-5/tree/master/Week_04_Intro_Programming/Assignment/jquery_dom_selector_practice",
+      urlText: "jQuery DOM Selector Practice",
+      description: "Practice selecting elements with jQuery. Complete your work inside the js/exercise.js file. The comments in that file are your instructions."
+    },
+    {
       title: "Reading",
       url: "https://www.codecademy.com/blog/78-your-guide-to-semicolons-in-javascript",
       urlText: "Your Guide to Semicolons in JavaScript",
       description: "This article will help you understand when to use semicolons."
+    }
+  ],
+  Links: [
+    {
+      url: "http://oscarotero.com/jquery/",
+      urlText: "jQuery Cheatsheet",
+      description: "A quick jQuery API reference with links to the jQuery documentation."
     }
   ]
 };
