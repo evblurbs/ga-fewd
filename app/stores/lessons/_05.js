@@ -24,10 +24,10 @@ var _05 = {
       description: "By 8.27.15, please read chapters one and two of this book. It will be very helpful as we dive into JavaScript and programming."
     },
     {
-      title: "Videos",
-      url: "https://generalassemb.ly/online/videos/what-can-you-do-with-javascript",
-      urlText: "What can you do with JavaScript?",
-      description: "By 8.27.15, please watch these screencasts. They will give you a broader view of JavaScript and what it is capable of."
+      title: "Coding",
+      url: "https://www.codecademy.com/tracks/javascript",
+      urlText: "Code Academy: JavaScript",
+      description: "By 8.27.15, go through the tutorials on Code Academy on JavaScript."
     }
   ],
   Supplemental: [
