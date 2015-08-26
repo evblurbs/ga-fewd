@@ -69,8 +69,8 @@ Evan Johnson + Derek Fons
 
 ----
 
-### &#8984; + Shift + } = Indent to the right
-### Control + Shift + { = Indent to the left
+### &#8984; + } = Indent to the right
+### &#8984; + { = Indent to the left
 ### Tab = Indent to the right
 ### Shift + Tab = Indent to the left
 
