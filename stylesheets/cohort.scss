@@ -1,0 +1,65 @@
+.cohort-picture {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+.cohortInfo {
+  width: 400px;
+  float: right;
+}
+
+.cohortInfo-name {
+  font-size: 22px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: $black;
+  margin: 0 0 30px;
+}
+
+.cohortInfo-item-label {
+  width: 145px;
+  display: inline-block;
+}
+
+.cohortInfo-item-label,
+.cohortInfo-item-value,
+.cohortInfo-item-value a {
+  font-size: 14px;
+  color: $black;
+  line-height: 40px;
+  font-weight: 300;
+}
+
+.cohortInfo-item {
+  border-top: 1px solid #000;
+}
+
+.cohortInfo-list {
+  border-bottom: 1px solid #000;
+}
+
+.cohortUsers-item:nth-child(odd) {
+  width: 310px;
+}
+
+.cohortUsers-item:nth-child(even) {
+  width: 400px;
+}
+
+.cohortUsers-item {
+  float: left;
+}
+
+.cohortUsers-item a {
+  color: $black;
+  line-height: 44px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

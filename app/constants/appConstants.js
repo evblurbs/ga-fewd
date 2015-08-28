@@ -1,6 +1,7 @@
 var appConstants = {
   GITHUB_HOSTNAME: 'api.github.com',
   GITHUB_API_USER: '/user?access_token=',
+  GITHUB_API_USER_FULL: 'https://api.github.com/user?access_token=',
   GITHUB_API_REPOS: '/user/repo?access_token=',
   GITHUB_API_EMAILS: 'https://api.github.com/user/emails?access_token=',
   GITHUB_API_SCOPE: 'user,user:email,repo',

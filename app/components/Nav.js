@@ -39,6 +39,9 @@ var Nav = React.createClass({
                 <Link to="home">Lessons</Link>
               </li>
               <li>
+                <Link to="cohort">Cohort</Link>
+              </li>
+              <li>
                 <Link to="logout">Logout</Link>
               </li>
             </ul>

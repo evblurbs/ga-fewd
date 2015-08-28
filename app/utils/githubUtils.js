@@ -51,7 +51,24 @@ var githubUtils = {
       .catch(function(response) {
         console.log(response);
       });
-  }
+  },
+
+  updateAvatar: function(user, accessToken, cb) {
+    var data = {
+      user: user,
+      cb: cb
+    };
+    axios.get(appConstants.GITHUB_API_USER_FULL + accessToken)
+      .then(function(response) {
+        var data = {
+          avatar_url: response.data.avatar_url
+        };
+        this.cb(this.user, data);
+      }.bind(data))
+      .catch(function(response) {
+        console.log(response);
+      });
+  },
 }
 
 module.exports = githubUtils;
