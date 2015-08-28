@@ -12,28 +12,22 @@ var _08 = {
       description: "Create a website that matches the image in the starter code directory. This assignment will be due September 1st, 2015."
     },
     {
-      title: "Blackout",
-      url: "https://github.com/ga-students/SEA-FEWD-5/tree/master/Week_05_JS_ComputerScience/09_variables_conditionals/starter_code/blackout",
-      urlText: "Starter Code",
-      description: "Finish the code for the Blackout exercise that we started in class."
-    },
-    {
-      title: "Compare That",
-      url: "https://github.com/ga-students/SEA-FEWD-5/tree/master/Week_05_JS_ComputerScience/09_variables_conditionals/starter_code/compare_that",
-      urlText: "Starter Code",
-      description: "Finish the code for the Compare That exercise that we started in class."
-    },
-    {
-      title: "Score Keeper",
-      url: "https://github.com/ga-students/SEA-FEWD-5/tree/master/Week_05_JS_ComputerScience/09_variables_conditionals/starter_code/score_keeper",
-      urlText: "Starter Code",
-      description: "Finish the code for the Score Keeper exercise that we started in class."
-    },
-    {
       title: "Coding",
       url: "https://www.codecademy.com/tracks/javascript",
       urlText: "Code Academy: JavaScript",
       description: "By 8.27.15, go through the tutorials on Code Academy on JavaScript."
+    },
+    {
+      title: "Reading",
+      url: "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/README.md#you-dont-know-js-up--going",
+      urlText: "You Don't Know JS: Up & Going",
+      description: "By 8.27.15, please read chapters one and two of this book. It will be very helpful as we dive into JavaScript and programming."
+    },
+    {
+      title: "Coding",
+      url: "https://github.com/ga-students/SEA-FEWD-5/tree/master/Week_04_Intro_Programming/Assignment/jquery_dom_selector_practice",
+      urlText: "jQuery Selectors Challenge",
+      description: "In this challenge, you will be finishing the questions in ‘js/exercise.js’. The questions are in the comments, and you will have to uncomment most of them. Copy this exercise to your forked repository and upload it for review."
     }
   ],
   Supplemental: [
