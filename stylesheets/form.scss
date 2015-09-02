@@ -1,0 +1,72 @@
+.fieldset {
+  margin: 0 0 20px;
+  
+  label {
+    width: 170px;
+    display: block;
+    float: left;
+    line-height: 35px;
+    font-size: 14px;
+  }
+
+  input {
+    width: 305px;
+    height: 35px;
+    display: block;
+    float: left;
+    line-height: 33px;
+    border: 1px solid #dae4eb;
+    text-indent: 10px;
+    font-size: 14px;
+
+    &[disabled] {
+      cursor: not-allowed;
+    }
+  }
+
+  span {
+    clear: both;
+    display: block;
+    margin: 0 0 0 170px;
+    padding: 10px 0 0 0;
+    font-size: 10px;
+    line-height: 16px;
+    color: #777;
+  }
+}
+
+form {
+  width: 475px;
+  padding-top: 36px;
+
+  .button {
+    float: right;
+    margin-top: 20px;
+  }
+
+  .message {
+    float: right;
+    display: block;
+    margin: 20px 20px 0 0;
+    line-height: 40px;
+    text-transform: uppercase;
+    &.success {
+      color: #00a651;
+      &:before {
+        content: '';
+        display: block;
+        float: left;
+        background: url('/img/check-mark.png');
+        width: 16px;
+        height: 12px;
+        margin: 12px 8px;
+      }
+    }
+
+    &.error {
+      color: red;
+      line-height: 20px;
+      max-width: 245px;
+    }
+  }
+}
