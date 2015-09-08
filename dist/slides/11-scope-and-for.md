@@ -2,7 +2,7 @@
 
 # JavaScript
 
-## Scope and Closure
+## Scope and for statements
 
 Evan Johnson + Derek Fons
 
