@@ -18,7 +18,7 @@ var Main = React.createClass({
   observe: function() {
     return {
       user: ParseReact.currentUser
-    }
+    };
   },
 
   componentDidMount: function() {
