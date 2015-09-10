@@ -13,8 +13,6 @@ Evan Johnson + Derek Fons
 * <!--- .element: class="fragment" data-fragment-index="1" -->Review
 * <!--- .element: class="fragment" data-fragment-index="2" -->Lab
 * <!--- .element: class="fragment" data-fragment-index="3" -->Scope
-* <!--- .element: class="fragment" data-fragment-index="4" -->for statement
-* <!--- .element: class="fragment" data-fragment-index="5" -->Closing
 
 ---
 
@@ -23,8 +21,6 @@ Evan Johnson + Derek Fons
 * <!--- .element: class="fragment" data-fragment-index="1" -->Describe what Scope is in JavaScript
 * <!--- .element: class="fragment" data-fragment-index="2" -->Describe how to shadow a variable with Scope
 * <!--- .element: class="fragment" data-fragment-index="3" -->Describe how to reassign a variable with Scope
-* <!--- .element: class="fragment" data-fragment-index="4" -->Describe what a for statement is
-* <!--- .element: class="fragment" data-fragment-index="5" -->Identify the 3 parameters/statements a for loop takes
 
 ---
 
@@ -294,97 +290,6 @@ File: 003.2-lexical.html
 
 ---
 
-## for statement
-
-----
-
-### for statement 
-
-> The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement or a set of statements executed in the loop.
-
-----
-
-### Syntax
-
-<pre><code data-trim class="javascript">
-for ([initializer]; [condition]; [final-expression]) {
-  // statement
-}
-</code></pre>
-
-----
-
-### Initializer
-
-<pre><code data-trim class="javascript">
-for (var i = 0; [condition]; [final-expression]) {
-  // statement
-}
-</code></pre>
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->An expression or variable declaration
-* <!--- .element: class="fragment" data-fragment-index="2" -->Typically used to initialize a counter variable
-
-----
-
-### Condition
-
-<pre><code data-trim class="javascript">
-for (var i = 0; i < 9; [final-expression]) {
-  // statement
-}
-</code></pre>
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->An expression (returns true or false)
-* <!--- .element: class="fragment" data-fragment-index="2" -->The expression is evaluated before each loop iteration
-* <!--- .element: class="fragment" data-fragment-index="3" -->If this expression evaluates to true, the statement is executed
-* <!--- .element: class="fragment" data-fragment-index="4" -->If this expression evaluates to false, the loop is exited
-
-----
-
-### Final Expression
-
-<pre><code data-trim class="javascript">
-for (var i = 0; i < 9; i++) {
-  // statement
-}
-</code></pre>
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->An expression that is evaluated at the end of each loop iteration
-* <!--- .element: class="fragment" data-fragment-index="2" -->This occurs before the next evaluation of the condition
-* <!--- .element: class="fragment" data-fragment-index="3" -->Generally used to update or increment the counter variable
-
-----
-
-### Statement
-
-<pre><code data-trim class="javascript">
-for (var i = 0; i < 9; i++) {
-  console.log(i);
-}
-</code></pre>
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->A statement or block statement that is executed as long as the condition evaluates to true
-
-----
-
-<!--- .element: data-background="#CCC" -->
-
-### Lab
-
-File: 004.1-for-statement.html<br />
-005-arrays.html
-
-----
-
-<!--- .element: data-background="#CCC" -->
-
-### Lab
-
-File: 006-lab.html
-
----
-
 ## Closing
 
 ----
@@ -394,8 +299,6 @@ File: 006-lab.html
 * <!--- .element: class="fragment" data-fragment-index="1" -->Describe what Scope is in JavaScript
 * <!--- .element: class="fragment" data-fragment-index="2" -->Describe how to shadow a variable with Scope
 * <!--- .element: class="fragment" data-fragment-index="3" -->Describe how to reassign a variable with Scope
-* <!--- .element: class="fragment" data-fragment-index="4" -->Describe what a for statement is
-* <!--- .element: class="fragment" data-fragment-index="5" -->Identify the 3 parameters/statements a for loop takes
 
 ----
 
