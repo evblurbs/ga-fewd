@@ -3,7 +3,7 @@ var _12 = {
   description: "In this lesson we will continue where we left off with Scope. We will then go over for statements, and how they can be used to iterate over a sequence of items. We will also go over AJAX, and how jQuery helps us implement that. During this, we will be finishing up InstaSearch. At the end, we will briefly go over Closure.",
   slides: "/12-for-and-closure.md",
   number: "12",
-  date: '9.11.15',
+  date: '9.10.15',
   Homework: [
     {
       title: "InstaSearch",
