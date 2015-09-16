@@ -147,6 +147,38 @@ What is closure?
 
 ## this
 
+----
+
+### this 
+
+> The JavaScript `this` keyword is used within any function scope or the global scope, and in each scope it receives a different value. The value of `this` inside a function, effectively depends on the object which called it.
+
+----
+
+### Javascript Object Button 
+
+<pre><code data-trim class="javascript">
+var person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  welcomeMessage: function() {
+    return this.firstName + ' ' + this.lastName;
+    // same as return person.firstName + ' ' + person.lastName;
+  }
+};
+
+</code></pre>
+
+----
+
+### jQuery Button 
+
+<pre><code data-trim class="javascript">
+$('.button').click(function(event){
+  var thisButton = $(this);
+});
+</code></pre>
+
 ---
 
 ## Lab
