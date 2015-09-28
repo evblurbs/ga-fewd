@@ -1,6 +1,6 @@
 var appConstants = require('../constants/appConstants');
 var https = require('https');
-var parseUtils = require('./parseUtils');
+var parseUtils = require('./parseServerUtils');
 var axios = require('axios');
 
 var githubUtils = {
