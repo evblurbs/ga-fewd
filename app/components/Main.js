@@ -24,7 +24,11 @@ var Main = React.createClass({
   componentDidMount: function() {
     sessionToken = cookieUtils.getItem("session-token");
     if(!this.data.user && sessionToken){
-      parseUtils.clientLogin(sessionToken);
+      if(sessionToken === "undefined") {
+        window.location = "/login";
+      } else {
+        parseUtils.clientLogin(sessionToken);
+      }
     }
   },
 
