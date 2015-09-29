@@ -8,7 +8,7 @@ var validateEmail = function(email) {
 }
 
 var notURL = function(url) {
-  if(url.indexOf("linkedin.com") > -1 || url.indexOf("twitter.com") > -1) {
+  if(url && (url.indexOf("linkedin.com") > -1 || url.indexOf("twitter.com") > -1)) {
     return false;
   } else {
     return true;
@@ -123,7 +123,7 @@ var Profile = React.createClass({
               <input
                 type="text"
                 value={this.state.twitter}
-                onChange={this.handleChange.bind(this, 'twittter')} />
+                onChange={this.handleChange.bind(this, 'twitter')} />
               <span>Add your Twitter username. Don't include the @ symbol.</span>
             </div>
             <div className="fieldset clearfix">
