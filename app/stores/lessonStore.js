@@ -2,9 +2,11 @@
 // for example:
 // var _01 = require('./lessons/_01');
 var _01 = require('./lessons/_01');
+var _01 = require('./lessons/_02');
 
 var _lessons = [];
 _lessons.push(_01);
+_lessons.push(_02);
 // push lessons to _lessons array
 // for example:
 // _lessons.push(_01);
