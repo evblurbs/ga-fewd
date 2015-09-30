@@ -9,36 +9,9 @@ Brian Cama & Sarah McAlear
 
 ---
 
-## Agenda
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->Review Homework
-* <!--- .element: class="fragment" data-fragment-index="2" -->Review HTML
-  * <!--- .element: class="fragment" data-fragment-index="3" -->Images
-  * <!--- .element: class="fragment" data-fragment-index="4" -->Lab
-* <!--- .element: class="fragment" data-fragment-index="5" -->CSS Intro
-  * <!--- .element: class="fragment" data-fragment-index="6" -->Syntax
-  * <!--- .element: class="fragment" data-fragment-index="7" -->Code Along
-  * <!--- .element: class="fragment" data-fragment-index="8" -->Colors
-  * <!--- .element: class="fragment" data-fragment-index="9" -->Selectors
-
----
-
-## Agenda (CONT)
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->CSS Intro (CONT)
-  * <!--- .element: class="fragment" data-fragment-index="2" -->Inheritance
-  * <!--- .element: class="fragment" data-fragment-index="3" -->Cascading
-  * <!--- .element: class="fragment" data-fragment-index="4" -->Lab
-  * <!--- .element: class="fragment" data-fragment-index="5" -->Specificity
-  * <!--- .element: class="fragment" data-fragment-index="6" -->Code Along
-* <!--- .element: class="fragment" data-fragment-index="7" -->Homework Lab
-* <!--- .element: class="fragment" data-fragment-index="8" -->Closing
-
----
-
 ## Learning Objectives
 
-* <!--- .element: class="fragment" data-fragment-index="1" -->Predict image paths and apply relative paths to <img> and <a> tags
+* <!--- .element: class="fragment" data-fragment-index="1" -->Predict image paths and apply relative paths to img and a tags
 * <!--- .element: class="fragment" data-fragment-index="2" -->Identify 2 ways to declare colors in CSS
 * <!--- .element: class="fragment" data-fragment-index="3" -->Identify 3 places where you can add CSS
 * <!--- .element: class="fragment" data-fragment-index="4" -->Describe CSS Inheritance
