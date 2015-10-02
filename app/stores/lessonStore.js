@@ -15,8 +15,10 @@ var _14 = require('./lessons/_14');
 var _15 = require('./lessons/_15');
 var _16 = require('./lessons/_16');
 var _17 = require('./lessons/_17');
+var _18 = require('./lessons/_18');
 
 var _lessons = [];
+_lessons.push(_18);
 _lessons.push(_17);
 _lessons.push(_16);
 _lessons.push(_15);
