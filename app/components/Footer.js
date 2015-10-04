@@ -8,7 +8,7 @@ var Footer = React.createClass({
   render: function() {
     return (
       <footer>
-        &copy; {new Date().getFullYear()} General Assembly. Class taught by Evan Johnson and Derek Fons.
+        &copy; {new Date().getFullYear()} General Assembly. Class taught by Brian Cama and Sarah McAlear.
       </footer>
     );
   }
