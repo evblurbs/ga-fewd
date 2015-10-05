@@ -3,8 +3,10 @@
 // var _01 = require('./lessons/_01');
 var _01 = require('./lessons/_01');
 var _02 = require('./lessons/_02');
+var _03 = require('./lessons/_03');
 
 var _lessons = [];
+_lessons.push(_03);
 _lessons.push(_02);
 _lessons.push(_01);
 // push lessons to _lessons array
