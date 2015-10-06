@@ -28,6 +28,24 @@ Where is everyone at?
 
 ## Hosting
 
+----
+
+### Hosting Services
+
+----
+
+### Domain Registars
+
+----
+
+### Setup
+* <!--- .element: class="fragment" data-fragment-index="1" -->Setup Hosting
+* <!--- .element: class="fragment" data-fragment-index="2" -->Configure Domain
+
+----
+
+### Upload
+
 ---
 
 ## HTML Emails
