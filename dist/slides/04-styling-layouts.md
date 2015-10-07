@@ -4,27 +4,15 @@
 
 ## Layouts
 
-Evan Johnson + Derek Fons
-
----
-
-## Agenda
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->Review
-* <!--- .element: class="fragment" data-fragment-index="2" -->Divs, IDs, and Classes
-* <!--- .element: class="fragment" data-fragment-index="3" -->HTML5 Structural Elements
-* <!--- .element: class="fragment" data-fragment-index="4" -->Floats
-* <!--- .element: class="fragment" data-fragment-index="5" -->Lab
-* <!--- .element: class="fragment" data-fragment-index="6" -->Closing
+Brian Cama + Sarah McAlear
 
 ---
 
 ## Learning Objectives
 
 * <!--- .element: class="fragment" data-fragment-index="1" -->Describe the difference between **ID** and **Class** selectors
-* <!--- .element: class="fragment" data-fragment-index="2" -->Identify **2** HTML5 elements to help structure your website
 * <!--- .element: class="fragment" data-fragment-index="3" -->Implement a CSS float **left** and **right**
-* <!--- .element: class="fragment" data-fragment-index="4" -->Identify **3** ways to clear a float
+* <!--- .element: class="fragment" data-fragment-index="4" -->Experiment and predict effects of floats and clearing CSS positioning
 * <!--- .element: class="fragment" data-fragment-index="5" -->Describe what the **clearfix hack** is used for
 
 ---
@@ -35,7 +23,7 @@ Evan Johnson + Derek Fons
 
 ### Relaxr
 
-How did it go?
+How is it going?
 
 ---
 
@@ -75,13 +63,13 @@ How did it go?
 ### Classes
 
 <pre><code class="html" data-trim>
-&lt;div class="section"&gt;
+&lt;div class="wrapper"&gt;
   ...
 &lt;/div&gt;
 </code></pre>
 
 <pre><!--- .element: class="fragment" data-fragment-index="1" --><code class="css" data-trim>
-.section {
+.wrapper {
   border-top: 1px solid #CCC;
   width: 400px;
 }
@@ -120,7 +108,7 @@ How did it go?
 &lt;body&gt;
   &lt;header&gt;...&lt;/header&gt;
   &lt;nav&gt;...&lt;/nav&gt;
-  &lt;sidebar&gt;...&lt;/sidebar&gt;
+  &lt;aside&gt;...&lt;/aside&gt;
   &lt;article&gt;...&lt;/article&gt;
   &lt;section&gt;...&lt;/section&gt;
   &lt;footer&gt;...&lt;/footer&gt;
@@ -247,18 +235,19 @@ img {
 
 ----
 
-### Learning Objectives
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->Describe the difference between **ID** and **Class** selectors
-* <!--- .element: class="fragment" data-fragment-index="2" -->Identify **2** HTML5 elements to help structure your website
-* <!--- .element: class="fragment" data-fragment-index="3" -->Implement a CSS float **left** and **right**
-* <!--- .element: class="fragment" data-fragment-index="4" -->Identify **3** ways to clear a float
-* <!--- .element: class="fragment" data-fragment-index="5" -->Describe what the **clearfix hack** is used for
-
-----
-
 ### Exit Tickets
 
 Give us feedback! Let us know what we're doing well at, and more
 importantly, what we can improve at.
+
+----
+
+### Learning Objectives
+
+* <!--- .element: class="fragment" data-fragment-index="1" -->Describe the difference between **ID** and **Class** selectors
+* <!--- .element: class="fragment" data-fragment-index="3" -->Implement a CSS float **left** and **right**
+* <!--- .element: class="fragment" data-fragment-index="4" -->Experiment and predict effects of floats and clearing CSS positioning
+* <!--- .element: class="fragment" data-fragment-index="5" -->Describe what the **clearfix hack** is used for
+
+
 
