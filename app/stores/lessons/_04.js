@@ -7,7 +7,7 @@ var _04 = {
   Homework: [
     {
       title: "Coding: Layouts Challenge",
-      url: "https://github.com/ga-students/SEA-FEWD-5/blob/master/Week_02_Styling/04_layout/starter_code/layout_challenge/layouts.pdf",
+      url: "https://github.com/ga-students/FEWD-SEA-6/tree/master/Week_02_Styling/04_layout/starter_code/layout_challenge/layouts.pdf",
       urlText: "Layouts PDF",
       description: "Try and create each layout in the PDF linked above. Remember the CSS float property can have a value of left or right. To clear floats, you can set the CSS property clear to left, right, or both."
     },

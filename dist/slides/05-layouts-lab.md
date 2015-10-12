@@ -4,17 +4,7 @@
 
 ## Layouts Lab
 
-Evan Johnson + Derek Fons
-
----
-
-## Agenda
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->Review Layouts Challenge
-* <!--- .element: class="fragment" data-fragment-index="2" -->Psuedo Classes
-* <!--- .element: class="fragment" data-fragment-index="3" -->How to Start
-* <!--- .element: class="fragment" data-fragment-index="4" -->Lab
-* <!--- .element: class="fragment" data-fragment-index="5" -->Closing
+Brian Cama & Sarah McAlear
 
 ---
 
@@ -43,7 +33,7 @@ Another way to select a subgroup of elements.
 
 ----
 
-### Psudeo Classes Syntax
+### Psuedo Classes Syntax
 
 Selector, colon, then psuedo class name.
 
@@ -60,21 +50,22 @@ a:link {
 ### Links + Psuedo Classes
 
 <pre><code data-trim class="css">
-a:hover {
-    color: blue;
+a:link {
+    color: green;
 }
-
 a:visited {
     color: gray;
 }
-
+a:hover {
+    color: blue;
+}
+a:focus {
+    color: blue;
+}
 a:active {
     color: black;
 }
 
-a:link {
-    color: green;
-}
 </code></pre>
 
 Note: link is anchor tags with an href. active is when links are clicked on.
@@ -117,6 +108,14 @@ First child, last child, odd, even, etc.
 
 ## Closing
 
+
+----
+
+### Exit Tickets
+
+Give us feedback! Let us know what we're doing well at, and more
+importantly, what we can improve at.
+
 ----
 
 ### Learning Objectives
@@ -128,8 +127,7 @@ First child, last child, odd, even, etc.
 
 ----
 
-### Exit Tickets
+###Homework
 
-Give us feedback! Let us know what we're doing well at, and more
-importantly, what we can improve at.
-
+*Finish up your Relaxr Blog page. 
+*Begin reading about Javascript to prepare for next weeks

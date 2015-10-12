@@ -5,8 +5,10 @@ var _01 = require('./lessons/_01');
 var _02 = require('./lessons/_02');
 var _03 = require('./lessons/_03');
 var _04 = require('./lessons/_04');
+var _05 = require('./lessons/_05');
 
 var _lessons = [];
+_lessons.push(_05);
 _lessons.push(_04);
 _lessons.push(_03);
 _lessons.push(_02);
