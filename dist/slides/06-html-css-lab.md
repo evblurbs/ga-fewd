@@ -4,20 +4,11 @@
 
 ## HTML + CSS Lab
 
-Evan Johnson + Derek Fons
+Brian Cama & Sarah McAlear
 
 ---
 
-## Agenda
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->Review Homework
-* <!--- .element: class="fragment" data-fragment-index="2" -->Workflow Hacks
-* <!--- .element: class="fragment" data-fragment-index="3" -->Lab
-* <!--- .element: class="fragment" data-fragment-index="4" -->Closing
-
----
-
-## Review Homework
+## Homework Clarifications
 
 ---
 
