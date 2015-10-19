@@ -1,6 +1,6 @@
 <img src="img/ga-logo.png" style="border:none; background: transparent; box-shadow:none;" />
 
-# JavaScript
+# Layout
 
 ## HTML + CSS Lab
 
