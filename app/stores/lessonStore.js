@@ -8,9 +8,11 @@ var _04 = require('./lessons/_04');
 var _05 = require('./lessons/_05');
 var _06 = require('./lessons/_06');
 var _07 = require('./lessons/_07');
+var _08 = require('./lessons/_08');
 
 var _lessons = [];
 
+_lessons.push(_08);
 _lessons.push(_07);
 _lessons.push(_06);
 _lessons.push(_05);
