@@ -63,8 +63,8 @@ jQuery is a cross-browser JavaScript library designed to simplify the client-sid
 ##Getting Started
 
 Adding jQuery to your website
-```<script src="js/jquery-1.11.3.js"></script>``` - Adding the file.
-```<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.in.js"></script>``` - CDN
+<pre><code><script src="js/jquery-1.11.3.js"></script></code></pre> - Adding the file.
+<pre><code><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.in.js"></script></code></pre> - CDN
 
 ## Content Delivery Network (CDN)
 
@@ -125,23 +125,6 @@ $("#myId")     // returns DOM element with the ID 'myId'
 $(".myClass")  // returns DOM element with the class 'myClass'
 </code></pre>
 
-Note: document.getElementById('thingy').onclick = doSomething;
-
-  function doSomething() {
-      // make something happen here
-  }
-
-In jQuery, this might look more like:
-
-  $('#thingy').click(doSomething);
-
-  function doSomething() {
-    // make something happen here
-    }
-    
-    
-Note: We will certainly be discussing this in more detail, but in general jQuery let’s us grab some element from the page ($('selector')), and do something with it ($('selector').click(doSomething);). In this case, we grabbed an element with the id thingy and used .click() to make a function run when the user clicks on #thingy.
-
 ----
 
 ## jQuery Chained Methods
@@ -157,13 +140,13 @@ $(".myClass").hide();
 
 ----
 
-## jQuery DOC Ready
+## jQuery Document Ready
 
 The browser loads some content synchronously and other content asynchronously. This can cause a problem with our JavaScript, as a lot of it is dependent on the state of the DOM and other assets.
 
 ----
 
-## jQuery DOC Ready
+## jQuery Document Ready
 
 **Good News!** jQuery has a method to handle this.
 
@@ -171,7 +154,7 @@ The browser loads some content synchronously and other content asynchronously. T
 
 ----
 
-## jQuery DOC Ready Example
+## jQuery Document Ready Example
 
 <pre><code data-trim class="javascript">
 $(document).ready(function() {
@@ -185,7 +168,7 @@ The console log statement is fired after the Document has loaded. http://learn.j
 
 ## Some jQuery methods
 
-Mouse Events
+###Click Events
 
 <pre><code data-trim class="javascript">
 
@@ -200,7 +183,8 @@ function moveBox() {
 
 ----
 
-Effects
+###jQuery Effects
+####show()
 
 <pre><code data-trim class="javascript">
 
@@ -212,15 +196,15 @@ $('myselector').show(300)
 
 ----
 
-Other jQuery methods
+###Other jQuery methods
 
-.hide()
-.toggle()
-.slideUp()
-.slideDown()
-.slideToggle()
+*.hide()
+*.toggle()
+*.slideUp()
+*.slideDown()
+*.slideToggle()
 
-Many of these also have a duration parameter that you can set.
+Most jQuery methods have parameters that can change how they behave. Parameters go within '()'
 
 </code></pre>
 
