@@ -11,9 +11,9 @@ Brian Cama & Sarah McAlear
 ## Learning Objectives
 
 
-*Define variables and identify best cases to use them.
-*Differentiate between strings, numbers and booleans.
-*Apply conditionals to change the programs control flow.
+* Define variables and identify best cases to use them.
+* Differentiate between strings, numbers and booleans.
+* Apply conditionals to change the programs control flow.
 
 ---
 
@@ -130,6 +130,26 @@ Escaping
 
 ----
 
+##Numbers
+
+Represent numerical data
+
+integers:         42
+
+float:      3.14159265
+
+----
+
+##Numbers
+
+Signed
+
+int:         +6
+
+float:      -8.2
+
+----
+
 ##Conversion: String To Number
 
 <pre><code data-trim class="javascript">var intString = "4";
@@ -157,29 +177,6 @@ Why would you need to convert datatypes?
 
 ----
 
-##Numbers
-
-Represent numerical data
-
-integers:         42
-
-float:      3.14159265
-
-----
-
-##Numbers
-
-Signed
-
-int:         +6
-
-float:      -8.2
-
-Can perform arithmetic on number data types
-
-----
-
-
 ##Arithmetic In JavaScript
 
 <img src="img/arithmetic.jpg" style="border:none; background: transparent; box-shadow:none;" />
@@ -189,12 +186,12 @@ Can perform arithmetic on number data types
 ###Conditional Syntax
 
 <pre><code data-trim class="javascript" contenteditable>
-if (condition is true) {  
+if (condition is true) {
   // Do cool stuff
 }
 
 else {
-  // Do other cool stuff
+// Do other cool stuff
 } 
 </pre></code>
 
@@ -291,7 +288,5 @@ importantly, what we can improve at.
 ----
 
 ### Final Project
-
-----
 
 
