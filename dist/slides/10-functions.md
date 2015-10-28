@@ -2,9 +2,9 @@
 
 # JavaScript
 
-## Conditions, Functions, and Arrays
+## Functions
 
-Evan Johnson + Derek Fons
+Brian Cama & Sarah McAlear
 
 ---
 
@@ -35,7 +35,7 @@ Evan Johnson + Derek Fons
 
 ----
 
-##Function Calls
+##Invoking Functions
 
 ![](img/function_calls.png)
 
@@ -43,7 +43,7 @@ Evan Johnson + Derek Fons
 
 ##Function Arguments
 
-![](/img/argument_syntax.png)
+![](img/argument_syntax.png)
 
 ----
 
@@ -52,15 +52,15 @@ Evan Johnson + Derek Fons
 
 
 
-![](/img/function_call_argument)
+![](img/function_call_argument)
 
 ----
 
 ##Return Functions
 
-*So far our functions have simply performed some action that made a change(displayed a new number, alter our html)<!--- .element: class="fragment" data-fragment-index="1" -->
-*In programming we call this a side effect<!--- .element: class="fragment" data-fragment-index="2" -->
-*What if we want our function to actually return us a value?<!--- .element: class="fragment" data-fragment-index="3" -->
+*<!--- .element: class="fragment" data-fragment-index="1" -->So far our functions have simply performed some action that made a change(displayed a new number, alter our html)
+*<!--- .element: class="fragment" data-fragment-index="2" -->In programming we call this a side effect
+*<!--- .element: class="fragment" data-fragment-index="3" -->What if we want our function to actually return us a value?
 
 ----
 
@@ -134,6 +134,8 @@ twoPlusTwo(); //=> 4</code></pre>
 ----
 
 ##Callbacks
+
+We can also use anonymous functions within other functions (a function accepting another function as an argument).
 
 <pre><code>//Note that the item in the click method's parameter is a function, not a variable.​
 ​//This item is a callback function
