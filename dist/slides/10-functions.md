@@ -52,15 +52,15 @@ Brian Cama & Sarah McAlear
 
 
 
-![](img/function_call_argument)
+![](img/function_call_argument.png)
 
 ----
 
 ##Return Functions
 
-*<!--- .element: class="fragment" data-fragment-index="1" -->So far our functions have simply performed some action that made a change(displayed a new number, alter our html)
-*<!--- .element: class="fragment" data-fragment-index="2" -->In programming we call this a side effect
-*<!--- .element: class="fragment" data-fragment-index="3" -->What if we want our function to actually return us a value?
+* <!--- .element: class="fragment" data-fragment-index="1" -->So far our functions have simply performed some action that made a change(displayed a new number, alter our html)
+* <!--- .element: class="fragment" data-fragment-index="2" -->In programming we call this a side effect.
+* <!--- .element: class="fragment" data-fragment-index="3" -->What if we want our function to actually return us a value?
 
 ----
 
