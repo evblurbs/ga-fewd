@@ -35,8 +35,9 @@ This will tell you where to start your hunt
 
 *	None of my code works
 	*	Syntax error, check console
-----
 
+
+----
 
 ##Debugging: Level __1__
 
