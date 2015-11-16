@@ -14,9 +14,11 @@ var _10 = require('./lessons/_10');
 var _11 = require('./lessons/_11');
 var _12 = require('./lessons/_12');
 var _13 = require('./lessons/_13');
+var _14 = require('./lessons/_14');
 
 var _lessons = [];
 
+_lessons.push(_14);
 _lessons.push(_13);
 _lessons.push(_12);
 _lessons.push(_11);
