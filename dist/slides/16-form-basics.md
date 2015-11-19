@@ -4,16 +4,7 @@
 
 ## Form Basics
 
-Evan Johnson + Derek Fons
-
----
-
-## Agenda
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->Review
-* <!--- .element: class="fragment" data-fragment-index="2" -->Forms
-* <!--- .element: class="fragment" data-fragment-index="3" -->Lab
-* <!--- .element: class="fragment" data-fragment-index="4" -->Closing
+Brian Cama & Sarah McAlear
 
 ---
 
@@ -29,9 +20,9 @@ Evan Johnson + Derek Fons
 
 ----
 
-### Final Project
+### Relaxr Responsive
 
-Where is everyone at?
+How'd it go?
 
 ---
 
@@ -222,25 +213,13 @@ Adds a submit button:
 
 ----
 
-### Learning Objectives
+### Exit Tickets
 
-* <!--- .element: class="fragment" data-fragment-index="1" -->Describe how to add a form to a webpage
-* <!--- .element: class="fragment" data-fragment-index="2" -->Describe 3 different types of input tags
-* <!--- .element: class="fragment" data-fragment-index="3" -->Implement a select field
-
-----
-
-### Homework
-
-Make Relaxr's website responsive.
+Give us feedback! Let us know what we're doing well at, and more
+importantly, what we can improve at.
 
 ----
 
 ### Final Project
 
-----
 
-### Exit Tickets
-
-Give us feedback! Let us know what we're doing well at, and more
-importantly, what we can improve at.
