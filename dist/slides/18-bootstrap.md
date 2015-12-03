@@ -107,20 +107,18 @@ To use the Bootstrap capabilities we will have to add classes to our html elemen
 
 ### Simple 50/50 grid
 
-```<div class="container">
+<pre><code><div class="container">
 	<div class="row">
 		<div class="col-md-6">Left Column</div>
 		<div class="col-md-6">Right column</div>
 	</div>
-</div>
-```
+</div></code></pre>
 
 ----
 ### Container
 
-```
-<div class="container"></div>
-```
+
+<pre><code><div class="container"></div></code></pre>
 
 The element with the container class serves as the outer container for all of our grid elements.
 * <!--- .element: class="fragment" data-fragment-index="1" -->Your rows should be placed within a container element.
