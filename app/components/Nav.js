@@ -56,7 +56,7 @@ var Nav = React.createClass({
             {this.renderWelcome()}
             <ul>
               <li>
-                <a href="/login2">Login</a>
+                <a href="/fewd7login">Login</a>
               </li>
             </ul>
           </nav>
