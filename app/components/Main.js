@@ -32,7 +32,7 @@ var Main = React.createClass({
     return (
       <div className="home">
         <div className="header-section">
-          <h2>FRONT-END WEB DEVELOPMENT<br />GENERAL ASSEMBLY<br />AUGUST 4TH - OCTOBER 8TH</h2>
+          <h2>FRONT-END WEB DEVELOPMENT<br />GENERAL ASSEMBLY<br />DECEMBER 7TH - FEBRUARY 29TH</h2>
           <a href="/login" className="button">Sign Up</a>
         </div>
         <div className="section-break">
