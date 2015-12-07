@@ -2,12 +2,16 @@
 // for example:
 // var _01 = require('./lessons/_01');
 
+var _01 = require('./lessons/_01');
+
 var _lessons = [];
 // push lessons to _lessons array
 // for example:
 // _lessons.push(_01);
 // lessons are listed in ascending order
 // of the array's index
+
+_lessons.push(_01);
 
 var _lookup = {};
 for (var i = 0, len = _lessons.length; i < len; i++) {
