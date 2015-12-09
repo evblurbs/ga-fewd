@@ -3,6 +3,7 @@
 // var _01 = require('./lessons/_01');
 
 var _01 = require('./lessons/_01');
+var _02 = require('./lessons/_02');
 
 var _lessons = [];
 // push lessons to _lessons array
@@ -11,6 +12,7 @@ var _lessons = [];
 // lessons are listed in ascending order
 // of the array's index
 
+_lessons.push(_02);
 _lessons.push(_01);
 
 var _lookup = {};
