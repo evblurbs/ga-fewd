@@ -13,13 +13,13 @@ var _01 = {
     },
     {
       title: "Coding: Cookie Recipe",
-      url: "https://github.com/ga-students/SEA-FEWD-5/tree/master/Week_01_Basics/01_html_basics/starter_code/cookie_recipe",
+      url: "https://github.com/ga-students/FEWD-SEA-7/tree/master/Week_01_Basics/01_html_basics/starter_code/cookie_recipe",
       urlText: "Starter Code",
       description: "Create an HTML document from the text in the starter code. The text should be wrapped with HTML tags that you find to be appropriate. Remember, HTML is supposed to be declarative. Ask yourself what is each piece of content in relationship to the structure of the whole HTML page."
     },
     {
       title: "Reading",
-      url: "https://github.com/ga-students/SEA-FEWD-5/raw/master/Week_00_GitHub/Getting_Started_With_GitHub.pdf",
+      url: "https://github.com/ga-students/FEWD-SEA-7/blob/master/Week_00_GitHub/Getting_Started_With_GitHub.pdf",
       urlText: "Getting Started with GitHub",
       description: "If you haven't read through the pre-work on GitHub, make sure to review this PDF. It can also be found in our classes repository."
     }
@@ -46,7 +46,7 @@ var _01 = {
   ],
   Links: [
     {
-      url: "https://github.com/ga-students/SEA-FEWD-5",
+      url: "https://github.com/ga-students/FEWD-SEA-7",
       urlText: "Student Repository",
       description: "This is the Student Repository for the class. Make sure to have a clone of this repository on your computer. New material will be added (i.e. starter code, resources, etc.) throughout the class, and you'll need to sync/pull the updates from the repository to your local repository."
     }
