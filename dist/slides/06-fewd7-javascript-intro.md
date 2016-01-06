@@ -2,7 +2,7 @@
 
 # JavaScript
 
-## Intro to JavaScript and jQuery
+## Intro to JavaScript
 
 Evan Johnson + Rick Chen
 
