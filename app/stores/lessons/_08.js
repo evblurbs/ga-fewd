@@ -3,7 +3,7 @@ var _08 = {
   description: "We are going to continue where we left off with JavaScript in this lesson. We will start with a review to go over the topics we discussed in the Intro to JavaScript lesson. After the review, we will go over jQuery and how to use it. Finally, we will wrap up by covering conditions. Your homework for the weekend is a couple small JavaScript exercises and to finish the Startup Matchmaker website.",
   slides: "/08-fewd7-jquery-js.md",
   number: "08",
-  date: '8.27.15',
+  date: '1.11.16',
   Homework: [
     {
       title: "Coding",
@@ -15,13 +15,13 @@ var _08 = {
       title: "Coding",
       url: "https://www.codecademy.com/tracks/javascript",
       urlText: "Code Academy: JavaScript",
-      description: "By 8.27.15, go through the tutorials on Code Academy on JavaScript."
+      description: "Go through the tutorials on Code Academy on JavaScript."
     },
     {
       title: "Reading",
       url: "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/README.md#you-dont-know-js-up--going",
       urlText: "You Don't Know JS: Up & Going",
-      description: "By 8.27.15, please read chapters one and two of this book. It will be very helpful as we dive into JavaScript and programming."
+      description: "Please read chapters one and two of this book. It will be very helpful as we dive into JavaScript and programming."
     },
     {
       title: "Coding",
