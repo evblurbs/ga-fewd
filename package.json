@@ -24,8 +24,8 @@
     "jsx-loader": "^0.13.2",
     "node-sass": "^3.3.3",
     "object-assign": "^3.0.0",
-    "parse": "^1.6.3",
-    "parse-react": "^0.4.3",
+    "parse": "1.6.9",
+    "parse-react": "0.5",
     "react": "^0.13.3",
     "react-router": "^0.13.3"
   },

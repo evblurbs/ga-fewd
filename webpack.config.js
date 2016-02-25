@@ -32,9 +32,11 @@ var config = {
       { test: /\.js$/, loader: 'jsx-loader' },
       { test: /\.scss$/, loader: 'style!css!sass?sourceMap' }
     ]
-  }
+  },
+  externals: [{
+    xmlhttprequest: '{XMLHttpRequest:XMLHttpRequest}'
+  }]
 };
 
 
 module.exports = config;
-
