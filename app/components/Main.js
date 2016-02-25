@@ -33,7 +33,7 @@ var Main = React.createClass({
       <div className="home">
         <div className="header-section">
           <h2>FRONT-END WEB DEVELOPMENT<br />GENERAL ASSEMBLY<br />DECEMBER 7TH - FEBRUARY 29TH</h2>
-          <a href="/login" className="button">Sign Up</a>
+          <a href="/fewd8login" className="button">Sign Up</a>
         </div>
         <div className="section-break">
           <h1>Welcome to the FEWD course!</h1>
@@ -69,4 +69,3 @@ var Main = React.createClass({
 });
 
 module.exports = Main;
-
