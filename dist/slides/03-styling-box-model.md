@@ -4,19 +4,7 @@
 
 ## Box Model
 
-Evan Johnson + Derek Fons
-
----
-
-## Agenda
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->Review
-* <!--- .element: class="fragment" data-fragment-index="2" -->Box Model
-* <!--- .element: class="fragment" data-fragment-index="3" -->CSS Review
-  * <!--- .element: class="fragment" data-fragment-index="4" -->Tag Selectors
-  * <!--- .element: class="fragment" data-fragment-index="5" -->Nested Selectors
-* <!--- .element: class="fragment" data-fragment-index="6" -->Lab
-* <!--- .element: class="fragment" data-fragment-index="7" -->Closing
+Brian Cama & Sarah McAlear
 
 ---
 
@@ -35,15 +23,6 @@ Evan Johnson + Derek Fons
 ## Review
 
 Turn to a partner, and review the Portfolio project.
-
-----
-
-### GitHub Workflow
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->*Pull/Sync* **local CLONED student repo** to make sure you have the latest updates
-* <!--- .element: class="fragment" data-fragment-index="2" -->Copy files (starter code) to **local FORKED student repo**
-* <!--- .element: class="fragment" data-fragment-index="3" -->Coplete work in **local FORKED student repo**
-* <!--- .element: class="fragment" data-fragment-index="4" -->*Commit* and *push/sync* changes to **remote FORKED student repo** to share your work
 
 ----
 
@@ -198,7 +177,6 @@ Review common themes.
 <pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="css">
 * {
   box-sizing: content-box;
-  box-sizing: padding-box;
   box-sizing: border-box;
 }
 </code></pre>
@@ -225,32 +203,9 @@ Review common themes.
 
 ----
 
-### Tag Selectors
-
-<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="css">
-p {
-  color: red;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-}
-</code></pre>
-
-----
-
-### Lab
-
-<img src="/img/exercise_icon_md.png" style="border:none;box-shadow:none;background:transparent;" />
-
-----
-
 ### Nested Selectors
 
+#####Descendant Selector
 <pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="css">
 p a {
   text-decoration: none;
@@ -300,6 +255,13 @@ Relaxr, a NY Startup, needs you to build them a landing page.
 
 ----
 
+### Exit Tickets
+
+Give us feedback! Let us know what we're doing well at, and more
+importantly, what we can improve at.
+
+----
+
 ### Learning Objective
 
 * <!--- .element: class="fragment" data-fragment-index="1" -->Use a nested CSS selector
@@ -310,10 +272,5 @@ Relaxr, a NY Startup, needs you to build them a landing page.
 * <!--- .element: class="fragment" data-fragment-index="4"
   -->Calculate the ***border-box*** width of an element
 
-----
 
-### Exit Tickets
-
-Give us feedback! Let us know what we're doing well at, and more
-importantly, what we can improve at.
 

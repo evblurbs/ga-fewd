@@ -1,13 +1,13 @@
 var _02 = {
   title: "HTML and CSS",
   description: "In this lesson, we will review HTML further - going over the image tag and the differences between absolute and relative paths. The majority of the class will be an intro to CSS. We will go over the syntax used to write CSS, where CSS lives on your website, and different types of CSS selectors. The last part of the class will be lab time to start your homework, where you will implement the concepts we covered by creating a portfolio website.",
-  slides: "/02-basics.md",
+  slides: "/02-basics-css.md",
   number: "02",
-  date: '12.9.15',
+  date: '02.24.16',
   Homework: [
     {
       title: "Coding: HTML/CSS Basics",
-      url: "https://github.com/ga-students/FEWD-SEA-7/tree/master/Week_01_Basics/Assignment",
+      url: "https://github.com/ga-students/FEWD-SEA-8/tree/master/Week_01_Basics/Assignment",
       urlText: "Portfolio Website",
       description: "In this assignment, you will be creating a portfolio website. Click on the link above to read more."
     },
@@ -52,4 +52,3 @@ var _02 = {
 };
 
 module.exports = _02;
-

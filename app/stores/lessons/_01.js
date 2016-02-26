@@ -1,27 +1,15 @@
 var _01 = {
   title: "GitHub and HTML",
-  description: "In this lesson, we will go over GitHub - how our class will use it and how it's used throughout the industry. After setting up GitHub, we'll jump into HTML. This will be a review if you went through Dash or had some experience with HTML in the past. We will cover the structure of HTML and how it is meant to be declarative of your content. Depending how fast we go through the content, we may cover other ways to use Git and GitHub, the course website and structure, and any general questions.",
-  slides: "/01-basics.md",
+  description: "In this lesson, we will go over GitHub - how our class will use it and how it's used throughout the industry. After setting up GitHub, we'll jump into HTML. This will be a review if you went through Dash or had some experience with HTML in the past. We will cover the structure of HTML and how it is meant to be declarative of your content. Depending how fast we go through the content, we may cover other ways to use Git and GitHub, introduce CSS, and address any general questions.",
+  slides: "/01-basics-html.md",
   number: "01",
-  date: '12.7.15',
+  date: '02.22.16',
   Homework: [
     {
-      title: "Coding",
-      url: "https://dash.generalassemb.ly/",
-      urlText: "Dash",
-      description: "Dash teaches HTML, CSS, and Javascript through fun projects you can do in your browser. Each task should be pretty straight forward - telling you directly what to code."
-    },
-    {
-      title: "Coding: Cookie Recipe",
-      url: "https://github.com/ga-students/FEWD-SEA-7/tree/master/Week_01_Basics/01_html_basics/starter_code/cookie_recipe",
+      title: "Week 1 Assignment - About/Portfolio",
+      url: "https://github.com/ga-students/FEWD-SEA-8/tree/master/Week_01_Basics/Assignment",
       urlText: "Starter Code",
-      description: "Create an HTML document from the text in the starter code. The text should be wrapped with HTML tags that you find to be appropriate. Remember, HTML is supposed to be declarative. Ask yourself what is each piece of content in relationship to the structure of the whole HTML page."
-    },
-    {
-      title: "Reading",
-      url: "https://github.com/ga-students/FEWD-SEA-7/blob/master/Week_00_GitHub/Getting_Started_With_GitHub.pdf",
-      urlText: "Getting Started with GitHub",
-      description: "If you haven't read through the pre-work on GitHub, make sure to review this PDF. It can also be found in our classes repository."
+      description: "Create two HTML pages to create an About Me page as well as a Portfolio page. Remember, HTML is supposed to be declarative. Ask yourself what is each piece of content in relationship to the structure of the whole HTML page."
     }
   ],
   Supplemental: [

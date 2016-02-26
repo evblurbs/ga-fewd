@@ -4,48 +4,34 @@
 
 ## GitHub and HTML
 
-Evan Johnson + Derek Fons
+Brian Cama & Steve Minor
 
 Note: Give overview of course. Set class expectations.
 
 ---
 
-## Agenda
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->GitHub
-  * <!--- .element: class="fragment" data-fragment-index="2" -->Review
-  * <!--- .element: class="fragment" data-fragment-index="3" -->Github Lab
-* <!--- .element: class="fragment" data-fragment-index="4" -->HTML
-  * <!--- .element: class="fragment" data-fragment-index="5" -->Tags Review
-  * <!--- .element: class="fragment" data-fragment-index="6" -->Structural Reading w/ Understanding
-  * <!--- .element: class="fragment" data-fragment-index="7" -->HTML Code Along
-  * <!--- .element: class="fragment" data-fragment-index="8" -->HTML Lab
-
----
-
 ## Learning Objective
 
-* <!--- .element: class="fragment" data-fragment-index="1" -->Know how to clone, fork, sync, and update a GitHub repository
-* <!--- .element: class="fragment" data-fragment-index="2" -->Describe what an HTML tag is
-* <!--- .element: class="fragment" data-fragment-index="3" -->Demonstrate how to add an attribute to an HTML tag
-* <!--- .element: class="fragment" data-fragment-index="4" -->Recall three types of HTML tags
+* <!--- .element: class="fragment" data-fragment-index="1" -->Know how to clone, sync, and update a GitHub repository
+* <!--- .element: class="fragment" data-fragment-index="2" -->Define Git and explain it's benefits
+* <!--- .element: class="fragment" data-fragment-index="3" -->Describe what an HTML tag is
+* <!--- .element: class="fragment" data-fragment-index="4" -->Describe the DOM and draw a simple DOM tree
+* <!--- .element: class="fragment" data-fragment-index="5" -->Recall three types of HTML tags
 
 
 ---
 
 ## GitHub
 
-<img src="/img/Octocat.png" style="border:none; height:400px; background: transparent; box-shadow:none;" />
+<img src="../img/Octocat.png" style="border:none; height:400px; background: transparent; box-shadow:none;" />
 
 ----
 
 ### What is GitHub?
 
-* <!--- .element: class="fragment" data-fragment-index="1" -->**GitHub** is a *platform*. **Git** is a *version control system*.
+* <!--- .element: class="fragment" data-fragment-index="1" -->**Git** is a *version control system*. **GitHub** is a *platform*. 
 * <!--- .element: class="fragment" data-fragment-index="2" -->**GitHub** stores files like Dropbox or Google Drive.
 * <!--- .element: class="fragment" data-fragment-index="3" -->**Git/GitHub** keep a history of changes made to your project's files.
-* <!--- .element: class="fragment" data-fragment-index="4" -->**GitHub** makes it easy to share code with other people.
-* <!--- .element: class="fragment" data-fragment-index="5" -->**Git** was designed to allow multiple developers work on the same projec at the same time.
 
 ----
 
@@ -53,7 +39,6 @@ Note: Give overview of course. Set class expectations.
 
 * <!--- .element: class="fragment" data-fragment-index="1" -->Reverting
 * <!--- .element: class="fragment" data-fragment-index="2" -->Collaborating
-* <!--- .element: class="fragment" data-fragment-index="3" -->Stats
 * <!--- .element: class="fragment" data-fragment-index="4" -->Feedback
 
 ----
@@ -103,7 +88,7 @@ Similar to clone, forking a repository copies data. Instead of copying it from t
 3. <!--- .element: class="fragment" data-fragment-index="3" -->**Add** and **commit** changes
 4. <!--- .element: class="fragment" data-fragment-index="4" -->**Push** local commits to central **repository**
 
-Note: GitHub's collaborative process can work many different ways, but this is the most common. Remember: "Clone" means that we are copying our GitHub repository from the cloud and saving it as a local folder on our computer. Engineers typically create new branches for certain features or portions of the code they will work on, but we won't be creating branches in this class in this class.
+Note: GitHub's collaborative process can work many different ways, but this is the most common. Remember: "Clone" means that we are copying our GitHub repository from the cloud and saving it as a local folder on our computer. Engineers typically create new branches for certain features or portions of the code they will work on, but we won't be creating branches in this class in this class. In the GitHub App Push is usually referred to as publish or sync.
 
 ----
 
@@ -111,7 +96,7 @@ Note: GitHub's collaborative process can work many different ways, but this is t
 
 <img src="/img/code_along.png" style="border:none;box-shadow:none;background:transparent;" />
 
-Note: It is time to setup our GitHub repository for the work we will be doing today.
+Note: Cloned the class repo(FEWD-SEA-8) to our computers and created a new repository cookie_recipe to work on our in class/homework lab
 
 ---
 
@@ -146,8 +131,6 @@ HTML5 is HTML with a few additions. The Doctype tells you if the page is HTML5 r
 ### Tag Attributes
 
 <img src="/img/tags_attributes.png" style="border:none; background: transparent;" />
-
-Note: What kind of attributes would a person tag have?
 
 ----
 
@@ -220,7 +203,19 @@ Anchor Tags (Links)
 
 <img src="/img/exercise_icon_md.png" style="border:none;box-shadow:none;background:transparent;" />
 
-Note: Magazine and newspaper. Have them declare tags they know, and ask about one's they don't know.
+Note: GA Press Release
+
+----
+
+### The DOM
+
+The Document Object Model defines the logical structure of documents and the way a document is accessed and manipulated.
+
+----
+
+### DOM Structure
+
+<img src="/img/dom.png" style="border:none;box-shadow:none;background:white;" />
 
 ----
 
@@ -228,7 +223,7 @@ Note: Magazine and newspaper. Have them declare tags they know, and ask about on
 
 <img src="/img/code_along.png" style="border:none;box-shadow:none;background:transparent;" />
 
-Note: General Assembly Press Release
+Note: Drawing DOM trees
 
 ----
 
@@ -238,27 +233,26 @@ Note: General Assembly Press Release
 
 Note: Just HTML of Cookie Recipe
 
+----
+
+### Cookie Recipe
+
+* Commit changes and then push cookie_recipe to your repository on GitHub
+* If you feel comfortable with CSS, feel free to add styling to the Cookie Recipe, if not don't worry about it we will go over CSS in our next class.
+
+Note: The exact specifications for the CSS can be found in the README in your cookie_recipe repo. [Here](http://www.quackit.com/css/external_style_sheets.cfm) is a quick guide about creating an external stylesheet.
+
 ---
-
-## Homework
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->Push/sync cookie recipe to GitHub
-  * <!--- .element: class="fragment" data-fragment-index="2" -->We'll walk through syncing what you have now as a demonstration
-* <!--- .element: class="fragment" data-fragment-index="3" -->If you feel comfortable with CSS, feel free to add styling to the
-  Cookie Recipe. If not, no worries, we will go over CSS next class.
-
-----
-
-## Learning Objective
-
-* Know how to clone, fork, sync, and update a GitHub repository
-* Describe what an HTML tag is
-* Demonstrate how to add an attribute to an HTML tag
-* Recall three types of HTML tags
-
-----
 
 ### Exit Tickets
 
 Give us feedback! Let us know what we're doing well at, and more
 importantly, what we can improve at.
+
+----
+
+### Homework
+
+* <!--- .element: class="fragment" data-fragment-index="1" -->Finish Cookie Recipe
+* <!--- .element: class="fragment" data-fragment-index="2" -->About/Portfolio Pages
+* <!--- .element: class="fragment" data-fragment-index="3" -->Start thinking about your Final Projects

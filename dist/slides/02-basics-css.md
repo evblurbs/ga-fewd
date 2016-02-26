@@ -4,46 +4,20 @@
 
 ## HTML and CSS
 
-Evan Johnson + Derek Fons
+Brian Cama & Steve Minor
 
-Note: Give overview of course. Set class expectations.
-
----
-
-## Agenda
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->Review Homework
-* <!--- .element: class="fragment" data-fragment-index="2" -->Review HTML
-  * <!--- .element: class="fragment" data-fragment-index="3" -->Images
-  * <!--- .element: class="fragment" data-fragment-index="4" -->Lab
-* <!--- .element: class="fragment" data-fragment-index="5" -->CSS Intro
-  * <!--- .element: class="fragment" data-fragment-index="6" -->Syntax
-  * <!--- .element: class="fragment" data-fragment-index="7" -->Code Along
-  * <!--- .element: class="fragment" data-fragment-index="8" -->Colors
-  * <!--- .element: class="fragment" data-fragment-index="9" -->Selectors
-
----
-
-## Agenda (CONT)
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->CSS Intro (CONT)
-  * <!--- .element: class="fragment" data-fragment-index="2" -->Inheritance
-  * <!--- .element: class="fragment" data-fragment-index="3" -->Cascading
-  * <!--- .element: class="fragment" data-fragment-index="4" -->Lab
-  * <!--- .element: class="fragment" data-fragment-index="5" -->Specificity
-  * <!--- .element: class="fragment" data-fragment-index="6" -->Code Along
-* <!--- .element: class="fragment" data-fragment-index="7" -->Homework Lab
-* <!--- .element: class="fragment" data-fragment-index="8" -->Closing
 
 ---
 
 ## Learning Objectives
 
-* <!--- .element: class="fragment" data-fragment-index="1" -->Describe how to add a relative path
+* <!--- .element: class="fragment" data-fragment-index="1" -->Predict image paths and apply relative paths to img and a tags
 * <!--- .element: class="fragment" data-fragment-index="2" -->Identify 2 ways to declare colors in CSS
-* <!--- .element: class="fragment" data-fragment-index="3" -->Identify 3 places where you can add CSS? (Hint: Where does your CSS live?)
+* <!--- .element: class="fragment" data-fragment-index="3" -->Identify 3 places where you can add CSS
 * <!--- .element: class="fragment" data-fragment-index="4" -->Describe CSS Inheritance
 * <!--- .element: class="fragment" data-fragment-index="5" -->Calculate CSS Specificity
+
+Note: On the board before class ask students to research the tags header, img, hr and nav. Explain in front of class.
 
 ---
 
@@ -94,18 +68,12 @@ Note: Give overview of course. Set class expectations.
 
 ### Relative Paths
 
-* <!--- .element: class="fragment" data-fragment-index="1" -->Do NOT with a forward slash ("**/**")
+* <!--- .element: class="fragment" data-fragment-index="1" -->Do NOT start with a forward slash ("**/**")
 * <!--- .element: class="fragment" data-fragment-index="2" -->Searches the ***current*** directory for the declared path
 
 <pre><!--- .element: class="fragment" data-fragment-index="3" --><code data-trim class="html">
 &lt;img src="images/logo.png" /&gt;
 </code></pre>
-
-----
-
-### Relative Paths
-
-<img src="/img/folder_structure_parentDirectory.png" style="border:none;" />
 
 ----
 
@@ -120,9 +88,41 @@ Note: Give overview of course. Set class expectations.
 
 ----
 
-### Lab
+### Relative Paths
 
-<img src="/img/exercise_icon_md.png" style="border:none;box-shadow:none;background:transparent;" />
+<img src="/img/folder_structure_parentDirectory.png" style="border:none;" />
+
+----
+
+### Alt Attribute
+
+<pre><code data-trim class="html">
+&lt;img src="puppy.jpg" alt="My cute puppy" /&gt;
+</code></pre>
+
+Note:
+
+A piece of text to be used in lieu of the image when the image is unavailable
+
+Using `alt` attributes has the added benefit of giving search engines more linguistic context about the image as it is used on your page.
+
+Reasons an image may not load: 
+
+* There was a connection error, the browser didn't download the image.
+
+* The file was not found, perhaps because the image got moved elsewhere and the page wasn't updated yet to reflect the change.
+
+* The user is running a text-based browser such as an older phone with a WAP-style browser, or a non-graphical browser like lynx.
+
+* The user is using a screen reader because she has low vision, which will read the `alt` text aloud or present it through a braille reader.
+
+----
+
+### What Tag is It?
+
+<img src="/img/about_me_deliverable.png" style="border:none;box-shadow:none;background:transparent;" />
+
+Note: Go through the about_me_deliverable.png and ask the students to tag the elements.
 
 ---
 
@@ -158,7 +158,7 @@ img {
 
 ### Where does CSS live?
 
-1. <!--- .element: class="fragment" data-fragment-index="1" -->Embedded
+####Embedded
 
 <pre><!--- .element: class="fragment" data-fragment-index="2" --><code data-trim class="html">
 &lt;!DOCTYPE html&gt;
@@ -179,16 +179,9 @@ img {
 
 ----
 
-### Code Along
-
-<img src="/img/code_along.png" style="border:none;box-shadow:none;background:transparent;" />
-
-----
-
 ### Where does CSS live?
 
-1. Embedded
-2. <!--- .element: class="fragment" data-fragment-index="1" -->Inline
+####Inline
 
 <pre><!--- .element: class="fragment" data-fragment-index="2" --><code data-trim class="html">
 &lt;p style="color: purple;"&gt;This is styled inline!&lt;/p&gt;
@@ -204,9 +197,7 @@ img {
 
 ### Where does CSS live?
 
-1. Embedded
-2. Inline
-3. <!--- .element: class="fragment" data-fragment-index="1" -->External
+####External
 
 <pre><!--- .element: class="fragment" data-fragment-index="2" --><code data-trim class="html">
 &lt;!DOCTYPE html&gt;
@@ -216,16 +207,16 @@ img {
   &lt;link rel="stylesheet" type="text/css" href="path/to/css/file" /&gt;
 &lt;/head&gt;
 &lt;body&gt;
-  &lt;p&gt;This is styled with embedded CSS!&lt;/p&gt;
+  &lt;p&gt;This is styled with external CSS!&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
 ----
 
-### Code Along
+### Lab
 
-<img src="/img/code_along.png" style="border:none;box-shadow:none;background:transparent;" />
+<img src="/img/exercise_icon_md.png" style="border:none;box-shadow:none;background:transparent;" />
 
 ----
 
@@ -450,12 +441,6 @@ C is for Cascading
 
 ----
 
-### Lab
-
-<img src="/img/exercise_icon_md.png" style="border:none;box-shadow:none;background:transparent;" />
-
-----
-
 ### Specificity
 
 Not all selectors are created equal
@@ -464,29 +449,21 @@ Not all selectors are created equal
 
 ----
 
-### Code Along
+### Lab
 
 <img src="/img/code_along.png" style="border:none;box-shadow:none;background:transparent;" />
 
 ---
 
-## Homework
-
-<img src="/img/exercise_icon_md.png" style="border:none;box-shadow:none;background:transparent;" />
-
-----
-
-## Learning Objective
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->Describe how to add a relative path
-* <!--- .element: class="fragment" data-fragment-index="2" -->Identify 2 ways to declare colors in CSS
-* <!--- .element: class="fragment" data-fragment-index="3" -->Identify 3 places where you can add CSS? (Hint: Where does your CSS live?)
-* <!--- .element: class="fragment" data-fragment-index="4" -->Describe CSS Inheritance
-* <!--- .element: class="fragment" data-fragment-index="5" -->Calculate CSS Specificity
-
-----
-
 ### Exit Tickets
 
 Give us feedback! Let us know what we're doing well at, and more
 importantly, what we can improve at.
+
+----
+
+## Homework
+
+<img src="/img/exercise_icon_md.png" style="border:none;box-shadow:none;background:transparent;" />
+
+
