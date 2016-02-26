@@ -18,16 +18,16 @@
   },
   "homepage": "https://github.com/evblurbs/sea-fewd#readme",
   "dependencies": {
-    "axios": "^0.5.4",
+    "axios": "0.5.4",
     "date-format": "0.0.2",
-    "date-format-lite": "^0.7.4",
-    "jsx-loader": "^0.13.2",
-    "node-sass": "^3.3.3",
-    "object-assign": "^3.0.0",
+    "date-format-lite": "0.7.4",
+    "jsx-loader": "0.13.2",
+    "node-sass": "3.3.3",
+    "object-assign": "3.0.0",
     "parse": "1.6.9",
     "parse-react": "0.5",
-    "react": "^0.13.3",
-    "react-router": "^0.13.3"
+    "react": "0.13.3",
+    "react-router": "0.13.3"
   },
   "devDependencies": {
     "css-loader": "^0.15.6",
