@@ -119,7 +119,9 @@ var parseUtils = {
   },
 
   logout: function() {
-    Parse.User.logOut();
+    Parse.Promise.disableAPlusCompliant();
+    Parse.User && Parse.User.logOut();
+    Parse.Promise.enableAPlusCompliant();
   }
 };
 
