@@ -4,7 +4,7 @@
 
 ## Box Model
 
-Brian Cama & Sarah McAlear
+Brian Cama & Steve Minor
 
 ---
 
@@ -23,12 +23,6 @@ Brian Cama & Sarah McAlear
 ## Review
 
 Turn to a partner, and review the Portfolio project.
-
-----
-
-### Exit Tickets
-
-Review common themes.
 
 ---
 
