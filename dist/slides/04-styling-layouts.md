@@ -4,7 +4,7 @@
 
 ## Layouts
 
-Brian Cama + Sarah McAlear
+Brian Cama + Steve Minor
 
 ---
 
@@ -248,6 +248,3 @@ importantly, what we can improve at.
 * <!--- .element: class="fragment" data-fragment-index="3" -->Implement a CSS float **left** and **right**
 * <!--- .element: class="fragment" data-fragment-index="4" -->Experiment and predict effects of floats and clearing CSS positioning
 * <!--- .element: class="fragment" data-fragment-index="5" -->Describe what the **clearfix hack** is used for
-
-
-
