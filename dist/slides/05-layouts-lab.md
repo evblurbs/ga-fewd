@@ -4,7 +4,7 @@
 
 ## Layouts Lab
 
-Brian Cama & Sarah McAlear
+Brian Cama & Steve Minor
 
 ---
 
@@ -12,8 +12,7 @@ Brian Cama & Sarah McAlear
 
 * <!--- .element: class="fragment" data-fragment-index="1" -->Describe what Psuedo Classes are
 * <!--- .element: class="fragment" data-fragment-index="2" -->Identify **2** Psuedo Classes
-* <!--- .element: class="fragment" data-fragment-index="3" -->Implement a CSS float **left** and **right**
-* <!--- .element: class="fragment" data-fragment-index="4" -->Describe what the **clearfix hack** is used for
+* <!--- .element: class="fragment" data-fragment-index="3" -->Apply floats and clearing techniques to effectively create a two column layout.
 
 ---
 
@@ -130,4 +129,4 @@ importantly, what we can improve at.
 ###Homework
 
 *Finish up your Relaxr Blog page. 
-*Begin reading about Javascript to prepare for next weeks
+*Begin reading about Javascript to prepare for next weeks class
