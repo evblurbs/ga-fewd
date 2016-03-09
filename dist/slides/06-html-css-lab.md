@@ -4,20 +4,11 @@
 
 ## HTML + CSS Lab
 
-Evan Johnson + Derek Fons
+Brian Cama & Steve Minor
 
 ---
 
-## Agenda
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->Review Homework
-* <!--- .element: class="fragment" data-fragment-index="2" -->Workflow Hacks
-* <!--- .element: class="fragment" data-fragment-index="3" -->Lab
-* <!--- .element: class="fragment" data-fragment-index="4" -->Closing
-
----
-
-## Review Homework
+## Homework Questions
 
 ---
 
@@ -74,13 +65,9 @@ Evan Johnson + Derek Fons
 ### Tab = Indent to the right
 ### Shift + Tab = Indent to the left
 
-----
-
-## Questions?
-
 ---
 
-## Lab + Homework
+##Lab
 
 <img src="img/exercise_icon_md.png" style="border:none;box-shadow:none;background:transparent;" />
 
