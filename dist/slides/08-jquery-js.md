@@ -4,57 +4,25 @@
 
 ## Intro to jQuery
 
-Evan Johnson + Derek Fons
-
----
-
-## Agenda
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->Review
-* <!--- .element: class="fragment" data-fragment-index="2" -->Intro to jQuery
-* <!--- .element: class="fragment" data-fragment-index="3" -->Code Along
-* <!--- .element: class="fragment" data-fragment-index="4" -->Lab
-* <!--- .element: class="fragment" data-fragment-index="5" -->Conditions
-* <!--- .element: class="fragment" data-fragment-index="6" -->Lab
-* <!--- .element: class="fragment" data-fragment-index="7" -->Closing
-
+Brian Cama & Steve Minor
 
 ---
 
 ## Learning Ojectives
 
-* Describe JavaScript<!--- .element: class="fragment" data-fragment-index="1" -->
-* Create a JS Function<!--- .element: class="fragment" data-fragment-index="2" -->
-* Describe jQuery<!--- .element: class="fragment" data-fragment-index="3" -->
-* Identify 2 jQuery events<!--- .element: class="fragment" data-fragment-index="4" -->
-* Identify 2 jQuery animations<!--- .element: class="fragment" data-fragment-index="5" -->
-* Write an IF/ELSE condition<!--- .element: class="fragment" data-fragment-index="6" -->
+* Differentiate between jQuery and JavaScript, describe the benefits of using them.
+* Recognize jQuery syntax
+* Use selectors and jQuery functions to effectively manipulate the DOM
 
 ---
 
-## Review
-
-----
-
-### Startup MatchMaker
-
-How is it going?
+## Javascript
 
 ----
 
 <img src="img/js-logo.png" style="border:none; max-height: 500px;" />
 
 What is JavaScript?
-
-----
-
-## Console
-
-<img src="img/console.png" width="600" style="border:none;box-shadow:none; width: 600px; display:block;margin:30px auto;background:transparent;"/>
-
-* Chrome Menu (top right hamburger button) -> Tools -> Developer Tools
-* Mac shortcut: Cmd + Opt + i
-* PC shortcut: F12, Ctrl + Shift + i
 
 ----
 
@@ -84,7 +52,7 @@ Note: We will go over global variables at a later point.
 ## Declaring Functions
 
 <pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
-var myFunction = function(myParameter) {
+function myFunction (myParameter) {
   // this is a function
   // your code block goes in between the curly brackets {}
   // you can access the parameter by it's name above:
@@ -96,17 +64,11 @@ var myFunction = function(myParameter) {
 
 ----
 
-## Arithmetic Operators
+<img src="img/console.png" width="600" style="border:none;box-shadow:none; width: 600px; display:block;margin:30px auto;background:transparent;"/>
 
-| Operator      | Description        |
-| ------------- |:------------------:|
-| +             | Addition           |
-| -             | Subtraction        |
-| *             | Multiplication     |
-| /             | Division           |
-| %             | Modulus            |
-| ++            | Increment          |
-| --            | Decrement          |
+* Chrome Menu (top right hamburger button) -> Tools -> Developer Tools
+* Mac shortcut: Cmd + Opt + i
+* PC shortcut: F12, Ctrl + Shift + i
 
 ----
 
@@ -134,6 +96,7 @@ jQuery is a JavaScript library, or a collection of functions/methods and objects
 
 ## jQuery Definition
 
+jQuery is a cross-browser JavaScript library designed to simplify the client-side scripting of HTML
 > It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
 
 ----
@@ -144,25 +107,54 @@ jQuery is a JavaScript library, or a collection of functions/methods and objects
 
 ----
 
-## Content Dilvery Network (CDN)
+##Getting Started
+
+Adding jQuery to your website
+<pre><code><script src="js/jquery-1.11.3.js"></script></code></pre> - Adding the file.
+<pre><code><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.in.js"></script></code></pre> - CDN
+
+----
+
+## Content Delivery Network (CDN)
 
 > A **content delivery network** or **content distribution network** (CDN) is a large distributed system of servers deployed in multiple data centers across the Internet. The goal of a CDN is to serve content to end-users with high availability and high performance.
 
 ----
 
-<!--- .element: data-background="#CCC" -->
+## Code Along
 
-## Exercise
+Color Switcher: Revenge of the $(ith)
 
-File: 008.1-jquery.html
+<img src="img/code_along.png" style="border:none;box-shadow:none;background:transparent;" />
+
+----
+
+##jQuery Syntax - Selectors
+
+
+Selectors are just like CSS
+
+  $(".class").click();
+
+Note: document.getElementById('thingy').onclick = doSomething;
+
+  function doSomething() {
+      // make something happen here
+  }
+
+In jQuery, this might look more like:
+
+  $('selector').click(doSomething);
+
+  function doSomething() {
+    // make something happen here
+    }
+
+
+Note: We will certainly be discussing this in more detail, but in general jQuery let’s us grab some element from the page ($('slector')), and do something with it ($('selector').click(doSomething);). In this case, we grabbed an element with the id thingy and used .click() to make a function run when the user clicks on #thingy.
 
 ----
 
-## $ Symbol
-
-jQuery, unless assigned otherwise, assigns its methods to the **$** symbol.
-
-----
 
 ## jQuery Selector
 
@@ -180,17 +172,9 @@ $(".myClass")  // returns DOM element with the class 'myClass'
 
 ----
 
-<!--- .element: data-background="#CCC" -->
-
-## Exercise
-
-File: 008.2-jquery.html
-
-----
-
 ## jQuery Chained Methods
 
-You can chain methods to the jQuery object that is returned. For example, after selecting the DOM elements, you might want to preform:
+You can chain methods to the jQuery object that is returned. For example, after selecting the DOM elements, you might want to perform:
 
 <pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
 $("#myId").addClass('active');
@@ -227,17 +211,9 @@ The console log statement is fired after the Document has loaded. http://learn.j
 
 ----
 
-<!--- .element: data-background="#CCC" -->
-
-## Exercise
-
-File: 008.3-jquery.html
-
-----
-
 ## jQuery Events
 
-Events are actions that happen in the browser. jQuery allows you to bind functions to events that happens in the invent.
+Events are actions that happen in the browser. jQuery allows you to assign a function that will run when the event is "fired".
 
 Event types:<!--- .element: class="fragment" data-fragment-index="1" -->
 
@@ -247,33 +223,11 @@ Event types:<!--- .element: class="fragment" data-fragment-index="1" -->
 
 ----
 
-## Why Events?
-
-Up to this point, we have manually invoked functions. With jQuery events, we can bind functions to actions that occur in the browser.
-
-Examples:<!--- .element: class="fragment" data-fragment-index="1" -->
-
-* Once the Document has loaded, preload popular assets to improve latency<!--- .element: class="fragment" data-fragment-index="2" -->
-* On hover over button, show tooltip with additional info<!--- .element: class="fragment" data-fragment-index="3" -->
-* On click of button, show contact form in modal<!--- .element: class="fragment" data-fragment-index="4" -->
-
-----
-
 ## jQuery Hover (event)
 <img src="img/jq-hover.png" width="800" style="border:none;box-shadow:none; display:block;margin:30px auto;background:transparent;"/>
 
 ----
-
 ## Functions as variables
-
-<pre><code data-trim class="javascript">
-$("mySelector").hover(function() {
-    // hover in statement
-  }, function() {
-    // hover out statement
-  }
-);
-</code></pre>
 
 <pre><code data-trim class="javascript">
 var hoverIn = function() {
@@ -289,11 +243,16 @@ $("mySelector").hover( hoverIn, hoverOut );
 
 ----
 
-<!--- .element: data-background="#CCC" -->
+##Anonymous Functions
 
-## Exercise
-
-File: 008.4-jquery.html
+<pre><code data-trim class="javascript">
+$("mySelector").hover(function() {
+    // hover in statement
+  }, function() {
+    // hover out statement
+  }
+);
+</code></pre>
 
 ----
 
@@ -316,17 +275,9 @@ $("mySelector").click(function(e) {
 
 ----
 
-<!--- .element: data-background="#CCC" -->
-
-## Exercise
-
-File: 008.5-jquery.html
-
-----
-
 ## jQuery Animations
 
-jQuery animations allow you to add visual effects to the browser with JavaScript. There are a number of jQuery animations, but will go over a commonly used one called show()
+jQuery animations allow you to add visual effects to the browser with JavaScript. There are a number of jQuery animations, but we'll go over a commonly used one called show()
 
 ----
 
@@ -342,136 +293,26 @@ jQuery animations allow you to add visual effects to the browser with JavaScript
 $("mySelector").show(300)
 </code></pre>
 
-* The first parameter is the duration of the animation (i.e. how long until the element is showed).<!--- .element: class="fragment" data-fragment-index="1" -->
-* An option second parameter can passed it. It has to be a function, or callback for when the animation is complete.<!--- .element: class="fragment" data-fragment-index="2" -->
-
-----
-
-<!--- .element: data-background="#CCC" -->
-
-## Exercise
-
-File: 008.6-jquery.html
-
-----
-
-## Code Along
-
-SEA-FEWD5: /Week_04_Intro_Programming/
-07_intro_programming/starter_code/color_scheme_switcher
-
-<img src="img/code_along.png" style="border:none;box-shadow:none;background:transparent;" />
+* The first parameter is the duration of the animation (i.e. how long until the element is shown).<!--- .element: class="fragment" data-fragment-index="1" -->
+* An optional second parameter can be passed to it. It has to be a function, or callback for when the animation is complete.<!--- .element: class="fragment" data-fragment-index="2" -->
 
 ----
 
 ## Lab
 
-SEA-FEWD5: Week_04_Intro_Programming/
-Assignment/jquery_dom_selector_practice
+Traffic Light
 
 <img src="img/exercise_icon_md.png" style="border:none;box-shadow:none;background:transparent;" />
 
----
+----
 
-## Conditions
+Syntax Drill
+
+<img src="img/exercise_icon_md.png" style="border:none;box-shadow:none;background:transparent;" />
 
 ----
 
-##Conditional Syntax
-
-```
-if (condition is true) {  
-  // Do cool stuff
-}
-```
-
-----
-
-##Conditional Syntax
-
-```
-if (condition is true) {
-  // Do cool stuff
-} else {
-  // Do other cool stuff
-}	
-```
-
-----
-
-##Conditional Syntax
-
-<pre><code data-trim class="javascript">
-var topic = "JS";
-
-if (topic == "JS") {
-  console.log("You're learning JavaScript");
-} else if (topic == "JavaScript") {
-  console.log("You're still learning JavaScript");
-} else {
-  console.log("You're learning something else");
-}
-</code></pre>
-
-----
-
-##Multiple Conditions
-
-You can check multiple conditions by using the AND (**&&**) or the OR (**||**) operators.
-
-<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
-if (name == "GA" && password == "YellowPencil") {
-  // Allow access to internet
-}
-
-if (day == "Tuesday" || day == "Thursday"){
-  // We have class today
-}
-</code></pre>
-
-----
-
-##The Truth Table
-
-AND operator:
-
-<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
-if (name == "GA" && password == "YellowPencil") {
-	// Allow access to internet
-}
-</code></pre>
-
-----
-
-##The Truth Table
-
-![](img/and_table.png)
-
-----
-
-##The Truth Table
-
-OR operator:
-
-<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
-if (day == "Tuesday" || day == "Thursday") {
-	// We have class today
-}
-</code></pre>
-
-----
-
-##The Truth Table
-
-
-![](img/or_table.png)
-
-----
-
-## Lab
-
-SEA-FEWD5: Week_05_JS_ComputerScience/
-09_variables_conditionals/starter_code
+FAQ's
 
 <img src="img/exercise_icon_md.png" style="border:none;box-shadow:none;background:transparent;" />
 
@@ -481,14 +322,11 @@ SEA-FEWD5: Week_05_JS_ComputerScience/
 
 ----
 
-## Learning Ojectives
+## Learning Objectives
 
-* Describe JavaScript<!--- .element: class="fragment" data-fragment-index="1" -->
-* Create a JS Function<!--- .element: class="fragment" data-fragment-index="2" -->
-* Describe jQuery<!--- .element: class="fragment" data-fragment-index="3" -->
-* Identify 2 jQuery events<!--- .element: class="fragment" data-fragment-index="4" -->
-* Identify 2 jQuery animations<!--- .element: class="fragment" data-fragment-index="5" -->
-* Write an IF/ELSE condition<!--- .element: class="fragment" data-fragment-index="6" -->
+* Differentiate between jQuery and JavaScript, describe the benefits of using them.
+* Recognize jQuery syntax
+* Use selectors and jQuery functions to effectively manipulate the DOM
 
 ----
 
@@ -496,3 +334,9 @@ SEA-FEWD5: Week_05_JS_ComputerScience/
 
 Give us feedback! Let us know what we're doing well at, and more
 importantly, what we can improve at.
+
+----
+
+##Homework
+
+####Interactive Relaxr Blog
