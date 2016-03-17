@@ -110,8 +110,8 @@ jQuery is a cross-browser JavaScript library designed to simplify the client-sid
 ##Getting Started
 
 Adding jQuery to your website
-<pre><code><script src="js/jquery-1.11.3.js"></script></code></pre> - Adding the file.
-<pre><code><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.in.js"></script></code></pre> - CDN
+<pre><script src="js/jquery-1.11.3.js"></script></pre>- Adding the file.
+<pre><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.in.js"></script></pre> - CDN
 
 ----
 
@@ -136,8 +136,6 @@ Selectors are just like CSS
 
   $(".class").click();
 
-Note: document.getElementById('thingy').onclick = doSomething;
-
   function doSomething() {
       // make something happen here
   }
@@ -149,9 +147,6 @@ In jQuery, this might look more like:
   function doSomething() {
     // make something happen here
     }
-
-
-Note: We will certainly be discussing this in more detail, but in general jQuery let’s us grab some element from the page ($('slector')), and do something with it ($('selector').click(doSomething);). In this case, we grabbed an element with the id thingy and used .click() to make a function run when the user clicks on #thingy.
 
 ----
 
@@ -227,6 +222,7 @@ Event types:<!--- .element: class="fragment" data-fragment-index="1" -->
 <img src="img/jq-hover.png" width="800" style="border:none;box-shadow:none; display:block;margin:30px auto;background:transparent;"/>
 
 ----
+
 ## Functions as variables
 
 <pre><code data-trim class="javascript">
