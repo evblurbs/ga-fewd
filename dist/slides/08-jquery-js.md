@@ -8,7 +8,7 @@ Brian Cama & Steve Minor
 
 ---
 
-## Learning Ojectives
+## Learning Objectives
 
 * Differentiate between jQuery and JavaScript, describe the benefits of using them.
 * Recognize jQuery syntax
