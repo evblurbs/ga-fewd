@@ -1,5 +1,5 @@
 var _10 = {
-  title: "Arrays and Lab",
+  title: "Functions and Lab",
   description: "In this lesson, we will go over functions more in depth and create a cash register app. If we have additional time we will quickly go over Arrays and you will be given more time to create your Weather App.",
   slides: "/10-functions-and-arrays.md",
   number: "10",
