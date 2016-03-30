@@ -1,33 +1,38 @@
 var _12 = {
-  title: "Scope",
-  description: "We will spend some time finishing up the Rating App and the Rock, Paper, Scissors game. After that, we will go over what Scope is in JavaScript. It’s a complex concept, but one you’ll need a strong grasp of. The good news is that you’ve been using Scope all along.",
-  slides: "/12-scope-and-for.md",
+  title: "Refactor --> 'this'",
+  description: "This lesson sees us start to take our code and make it more efficient through 'Refactoring' and establish a series of steps to debug our code. We will also go over 'this' and how it can help us when refactoring our code.",
+  slides: "/12-refactor-this.md",
   number: "12",
-  date: '1.27.16',
+  date: '03.30.15',
   Homework: [
     {
-      title: "Food/Cuteness Rater",
-      url: "https://github.com/ga-students/FEWD-SEA-7/tree/master/Week_05_JS_ComputerScience/10a_%20advance_arrays/starter_code",
+      title: "CitiPix Refactored",
+      url: "https://github.com/ga-students/FEWD-SEA-8/tree/master/Week_06_Review_Refactor/Assignment",
       urlText: "Starter Code",
-      description: "In this project, you will be creating an interface where users can go through a list of images and rate each one. At the end, you will show the user the average rating they gave each photo. You should store the image URLs in an Array, and use that Array to update the image path with the user transitions to another photo. You should also store the score they give each image in an Array."
+      description: "The team from CitiPix has reached out for iteration on their prototype. Instead of using a user's text input to change the background of the interface, the CitiPix user experience designers have asked to see how a drop-down menu would work in place of an input field."
     },
     {
-      title: "Rock, Paper, Scissors",
-      url: "https://github.com/ga-students/FEWD-SEA-7/tree/master/Week_05_JS_ComputerScience/Assignment/rps/starter_code",
+      title: "Final Project",
+      url: "https://github.com/ga-students/FEWD-SEA-8/blob/master/Final_Project/final_project_requirements.md",
       urlText: "Starter Code",
-      description: "In this project, you will create a Rock, Paper, and Scissors game. The user will play against a computer which will randomly choose a selection in the game."
-    },
-    {
-      title: "Final Project Wireframes",
-      description: "Update your wireframes, and get prepared to present any updates on Monday."
+      description: "Your HTML and CSS drafts should be completed by the end of next week. Please have the projects up and viewable on GitHub."
     }
   ],
+
   Supplemental: [
     {
-      title: "Coding",
-      url: "https://thimble.mozilla.org/",
-      urlText: "Thimble",
-      description: "Thimble is a site to help you learn HTML, CSS, and JavaScript. It was craeted by Mozilla, who is a great resource for learning."
+      title: "Reading",
+      url: "http://eloquentjavascript.net/",
+      urlText: "Another javascript book",
+      description: "If you are looking for a different explanation of many JavaScript topics this is a great book. He explains the basic concepts well but quicklyl proceeds to get into all the nuances of the language."
+    }
+  ],
+
+  Links: [
+    {
+      url: "https://api.jquery.com/",
+      urlText: "jQuery Documentation",
+      description: "If you are looking for clarification on how to use a method or what you can do in jQuery this is your source."
     }
   ]
 };
