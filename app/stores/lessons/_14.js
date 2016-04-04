@@ -43,10 +43,11 @@ var _14 = {
     },
     {
       title: "Reading",
-      url: "https://css-tricks.com/resolution-specific-stylesheets/",
-      urlText: "Different Stylesheets for Differently Sized Browser Windows",
-      description: "CSS Tricks published an article on using media queries to provide different styles to different size screens."
+      url: "http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/",
+      urlText: "7 Habits of effective media queries",
+      description: "A good post on getting the most out of media queries and some practices to consider using."
     }
+
   ]
 };
 

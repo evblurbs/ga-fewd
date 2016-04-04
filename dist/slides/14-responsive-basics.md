@@ -4,16 +4,7 @@
 
 ## Responsive Basics
 
-Evan Johnson + Derek Fons
-
----
-
-## Agenda
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->Review
-* <!--- .element: class="fragment" data-fragment-index="2" -->Responsive Layouts
-* <!--- .element: class="fragment" data-fragment-index="3" -->REM/EM
-* <!--- .element: class="fragment" data-fragment-index="4" -->Media Queries
+Brian Cama & Sarah McAlear
 
 ---
 
@@ -32,13 +23,13 @@ Evan Johnson + Derek Fons
 
 ### Final Project
 
-Any Updates
+Share what we have so far.
 
 ----
 
 ### Citipix
 
-Team up, and let's start again.
+How'd it Go?
 
 ----
 
@@ -118,7 +109,7 @@ p {
 <pre><code data-trim class="html">
 &lt;body&gt;
   &lt;p&gt;Paragraph one...&lt;/p&gt;
-  &lt;div&gt;
+  &lt;div class="container"&gt;
     &lt;p&gt;Paragraph two...&lt;/p&gt;
   &lt;/div&gt;
 &lt;/body&gt;
@@ -133,7 +124,7 @@ p {
 
 ----
 
-### EM
+### REM
 
 <pre><code data-trim class="css">
 body {
@@ -152,7 +143,7 @@ p {
 <pre><code data-trim class="html">
 &lt;body&gt;
   &lt;p&gt;Paragraph one...&lt;/p&gt;
-  &lt;div&gt;
+  &lt;div class = "container"&gt;
     &lt;p&gt;Paragraph two...&lt;/p&gt;
   &lt;/div&gt;
 &lt;/body&gt;
@@ -187,7 +178,7 @@ p {
 </code></pre>
 
 <pre><!--- .element: class="fragment" data-fragment-index="2" --><code data-trim class="css">
-@media (max-width: 360px) or (min-width: 960px) {
+@media (max-width: 360px), (min-width: 960px) {
   // css here
 }
 </code></pre>
@@ -243,9 +234,26 @@ Allows you to ignore CSS in older browsers (i.e. screen) that are not compatible
 
 ---
 
-## Mobile First
+## Why Mobile First
 
----
+----
+
+###Graceful Degradation
+
+* Arose out of a need to have a design function on as many browsers and platforms as possible.
+* A full standard website would scale back as the viewport and devices got smaller
+
+----
+
+###Progressive Enhancement
+* Attempt to provide users with the least resources (screen size, processing power, third party plugins) with a perfectly functional experience.
+* The site can gradually be enhanced for larger platforms with more resources.
+
+----
+
+###Progressive Enhancement vs Graceful Degradation
+
+* Scaling Down is much more difficult than scaling up
 
 ## Lab
 
@@ -266,11 +274,11 @@ Allows you to ignore CSS in older browsers (i.e. screen) that are not compatible
 
 ----
 
-### Final Project
-
-----
-
 ### Exit Tickets
 
 Give us feedback! Let us know what we're doing well at, and more
 importantly, what we can improve at.
+
+----
+
+### Homework

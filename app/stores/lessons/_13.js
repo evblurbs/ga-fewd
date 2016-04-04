@@ -1,27 +1,21 @@
 var _13 = {
-  title: "Refactoring and this",
-  description: "In this lesson, we will review how to refactor code. We’ve reviewed how to start a project with pseudo code, and then make that pseudo code functional. Afterwards, it’s time to refactor your code to make it more maintainable. We will also review the ‘this’ keyword. We will finish up with a lab, where you will write HTML, CSS, and JavaScript.",
-  slides: "/13-fewd7-refactoring-and-this.md",
+    title: "Responsive Basics",
+  description: "Responsive design is becoming an industry standard. More and more websites are coded to change based on the screen size and/or device type. This class will cover responsive design basics, and how you can implement them with tools like media queries and REM/EM units. We will also complete a lab where you will create a responsive layout.",
+  slides: "/14-responsive-basics.md",
   number: "13",
-  date: '2.1.16',
+  date: '04.04.15',
   Homework: [
     {
-      title: "CitiPix",
-      url: "https://github.com/ga-students/FEWD-SEA-7/tree/master/Week_06_Review_Refactor/Assignment",
-      urlText: "Project Description",
-      description: "CitiPix is an app with a select field with various cities. When the select field changes, the background image changes to one of the selected city. Look at the description for more information. There are images in the week five assignment folder, or you can download images from a Google search."
+      title: "Homework",
+      url: "https://github.com/ga-students/FEWD-SEA-8/tree/master/Week_07_Multiple_Screens/Assignment",
+      urlText: "Relaxr Responsive",
+      description: "The product managers at Relaxr have asked you to return to the project and make their site responsive so it renders nicely on mobile devices."   
     },
     {
       title: "Reading",
-      url: "http://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/",
-      urlText: "Responsive Web Design: What it is and How To Use It.",
-      description: "Smashing Magazine published guidelines to responsive design. This is a general overview. If you get through this article, it contains a section titled 'Further Resources', which also has some helpful articles."
-    },
-    {
-      title: "Video",
-      url: "https://css-tricks.com/video-screencasts/102-braindump-on-responsive-web-design/",
-      urlText: "CSS-Tricks: Braindump on Responsive Web Design",
-      description: "This screen cast goes through the basics of responsive design - what it is, and what it's used for."
+      url: "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries",
+      urlText: "Using media queries",
+      description: "Read Mozilla Developer Networks article on using media queries. It should reiterate over the material we covered in class."
     }
   ],
   Supplemental: [
@@ -33,11 +27,12 @@ var _13 = {
     },
     {
       title: "Reading",
-      url: "https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20&%20closures/README.md#you-dont-know-js-scope--closures",
-      urlText: "You Don't Know JS: Scope & Closure",
-      description: "This books goes in depth over the concepts of Scope and Closure. It's a little dense reading, but well worth it if you have the time."
+      url: "https://css-tricks.com/resolution-specific-stylesheets/",
+      urlText: "Different Stylesheets for Differently Sized Browser Windows",
+      description: "CSS Tricks published an article on using media queries to provide different styles to different size screens."
     }
   ]
+
 };
 
 module.exports = _13;
