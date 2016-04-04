@@ -4,7 +4,7 @@
 
 ## Responsive Basics
 
-Brian Cama & Sarah McAlear
+Brian Cama & Steve Minor
 
 ---
 
