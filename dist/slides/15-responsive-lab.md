@@ -4,46 +4,59 @@
 
 ## Responsive Lab
 
-Evan Johnson + Derek Fons
-
----
-
-## Agenda
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->Review
-* <!--- .element: class="fragment" data-fragment-index="2" -->Lab
-* <!--- .element: class="fragment" data-fragment-index="3" -->Closing
+Brian Cama & Steve Minor
 
 ---
 
 ## Learning Objectives
 
-* <!--- .element: class="fragment" data-fragment-index="1" -->Describe what responsive design is
-* <!--- .element: class="fragment" data-fragment-index="2" -->Describe the differences between fixed and responsive designs
-* <!--- .element: class="fragment" data-fragment-index="3" -->Implement 2 different types of media queries
-* <!--- .element: class="fragment" data-fragment-index="4" -->Describe the difference between REM and EM
+* <!--- .element: class="fragment" data-fragment-index="1" -->Analyze a web page in order to be able to design it responsively
+* <!--- .element: class="fragment" data-fragment-index="2" -->Practice reusing previous code
+* <!--- .element: class="fragment" data-fragment-index="3" -->Practice using media queries for responsive design.
 
 ---
 
-## Review
+##Agenda
+
+How to make a website responsive.
 
 ----
 
-### Box Layouts
+##Level One
 
-How did the box layouts go?
+*	Convert widths to percentages
+*	Size fonts in ems
+*	Identify columns that can be stacked
 
 ----
 
-### Final Project
 
-Where is everyone at?
+##Level Two
 
----
+*	Determine what content is extra
+	*	Does that h1 need an h2 under it?
+	*	Will that one liner get the visitor to understand my site or is it extra?
 
-## Lab
+*	Determine what content needs to be visible
+	*	Is it necessary to show my entire nav if there are other ways of getting to navigation?
+
+*	Identify extra styling
+	*	Do my columns need a border if they’re stacked?
+
+
+----
 
 <img src="img/exercise_icon_md.png" style="border:none;box-shadow:none;background:transparent;" />
+##Startup Matchmaker
+
+----
+
+##Optional Design for Mobile
+
+*	Google FastButton
+	*	Removes the 300ms click delay on native mobile browsers
+*	Use CSS animations/transitions
+	*	Hardware acceleration
 
 ---
 
@@ -51,12 +64,10 @@ Where is everyone at?
 
 ----
 
-### Learning Objectives
+### Exit Tickets
 
-* <!--- .element: class="fragment" data-fragment-index="1" -->Describe what responsive design is
-* <!--- .element: class="fragment" data-fragment-index="2" -->Describe the differences between fixed and responsive designs
-* <!--- .element: class="fragment" data-fragment-index="3" -->Implement 2 different types of media queries
-* <!--- .element: class="fragment" data-fragment-index="4" -->Describe the difference between REM and EM
+Give us feedback! Let us know what we're doing well at, and more
+importantly, what we can improve at.
 
 ----
 
@@ -64,13 +75,3 @@ Where is everyone at?
 
 Make Relaxr's website responsive.
 
-----
-
-### Final Project
-
-----
-
-### Exit Tickets
-
-Give us feedback! Let us know what we're doing well at, and more
-importantly, what we can improve at.
