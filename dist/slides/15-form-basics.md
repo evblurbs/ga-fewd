@@ -16,15 +16,12 @@ Brian Cama & Steve Minor
 
 ---
 
-## Review
-
-----
-
 ### Relaxr Responsive
 
 How'd it go?
 
 ---
+
 ##Review
 
 ####HTML/CSS/JS 
@@ -219,18 +216,6 @@ To tie the two together choose one of these methods:
 ```<label>Name <input type="text" name="yourName"></label>```
 
 ```<label for="yourName">Name</label><input type="text" name=“yourName” id=“yourName”>```
-
-----
-
-##Styling
-
-* Can’t be styled directly
-  * Checkboxes, File upload inputs, Radio buttons
-
-* Number of ways to do this
-  1.  Opacity 0 on the element, set it’s height and width to define clickable area, set the height and width of it’s parent to be the same as the input (don’t forget position relative). Style the parent.
-  2.  Hide the element, style a corresponding label how you wanted the element to appear
-  3.  Try using pseudo elements and the selector :checked for no JS switching between checked and unchecked images used for styling
 
 ---
 
