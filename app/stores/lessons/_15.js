@@ -1,29 +1,29 @@
 var _15 = {
-  title: "Responsive Lab",
-  description: "In this class, the majority of the time will be used for a lab. In that lab, you will be making the Startup Match Maker website responsive. Afterwards, we will discuss the homework, which is to make the Relaxr website responsive. We will also spend some time making sure everyone understands what they need to do for their final project.",
-  slides: "/15-fewd7-responsive-lab.md",
+  title: "Form Basics",
+  description: "In this lesson we will go over the basics of forms. Forms allow you to collect data from your users. Since we are only doing the front-end implementation of the forms, we won’t be able to make that data persist beyond a single session. The majority of our class will be spent in lab, where everyone will work to add a form to the Relaxr website. If you finish the form, you can begin your homework, which is to make the Relaxr website responsive.",
+  slides: "/15-form-basics.md",
   number: "15",
-  date: '2.8.16',
+  date: '04.11.16',
   Homework: [
     {
       title: "Coding",
-      url: "https://github.com/ga-students/FEWD-SEA-7/tree/master/Week_07_Multiple_Screens/Assignment/starter_code",
-      urlText: "Starter Code for Relaxr",
-      description: "To make sure you have a firm grasp of responsive design and media queries, please make the Relaxr website responsive. You can use your previous files for the Relaxr project, or start with the starter code linked above."
+      url: "https://github.com/ga-students/FEWD-SEA-8/tree/master/Week_08_forms_and_things/Assignment/starter_code",
+      urlText: "Starter Code for Relaxr Form",
+      description: "Add a form to the Relaxr website for users to register. This will allow you to implement the form basics that we covered in class. You can use your previous files for the Relaxr project, or start with the starter code linked above."
     }
   ],
-  Supplemental: [
+  Links: [
     {
-      title: "Coding",
-      url: "https://thimble.mozilla.org/",
-      urlText: "Thimble",
-      description: "Thimble is a site to help you learn HTML, CSS, and JavaScript. It was craeted by Mozilla, who is a great resource for learning."
+      title: "Reading",
+      url: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Styling_HTML_forms",
+      urlText: "Styling HTML forms",
+      description: "This article goes over some of the issues with styling forms and how to go about creating beautiful web forms"
     },
     {
       title: "Reading",
-      url: "https://css-tricks.com/resolution-specific-stylesheets/",
-      urlText: "Different Stylesheets for Differently Sized Browser Windows",
-      description: "CSS Tricks published an article on using media queries to provide different styles to different size screens."
+      url: "https://css-tricks.com/tips-for-creating-great-web-forms/",
+      urlText: "Tips for creating great web forms",
+      description: "Chris Coyier goes over some ideas that can help you work with HTML forms."
     }
   ]
 };

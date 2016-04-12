@@ -4,16 +4,7 @@
 
 ## Form Basics
 
-Evan Johnson + Derek Fons
-
----
-
-## Agenda
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->Review
-* <!--- .element: class="fragment" data-fragment-index="2" -->Forms
-* <!--- .element: class="fragment" data-fragment-index="3" -->Lab
-* <!--- .element: class="fragment" data-fragment-index="4" -->Closing
+Brian Cama & Steve Minor
 
 ---
 
@@ -29,9 +20,16 @@ Evan Johnson + Derek Fons
 
 ----
 
-### Final Project
+### Relaxr Responsive
 
-Where is everyone at?
+How'd it go?
+
+---
+##Review
+
+####HTML/CSS/JS 
+
+What have we learned so far?
 
 ---
 
@@ -198,7 +196,7 @@ Adds a button that opens the finder to select a file.
 
 ### Submit
 
-Adds a submit button:
+Adds a submit button. The value given in the submit will be the button text.
 
 <pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="html">
 &lt;form action="register.php" method="post"&gt;
@@ -206,9 +204,33 @@ Adds a submit button:
   &lt;input type="email" placeholder="Your Email" /&gt;
   &lt;input type="password" placeholder="Your Password" /&gt;
   &lt;input type="file" /&gt;
-  &lt;input type="submit" /&gt;
+  &lt;input type="submit" value="Submit" /&gt;
 &lt;/form&gt;
 </code></pre>
+
+----
+
+##Labels
+
+Information about the input field should be put in a ```<label>``` tag
+
+To tie the two together choose one of these methods:
+
+```<label>Name <input type="text" name="yourName"></label>```
+
+```<label for="yourName">Name</label><input type="text" name=“yourName” id=“yourName”>```
+
+----
+
+##Styling
+
+* Can’t be styled directly
+  * Checkboxes, File upload inputs, Radio buttons
+
+* Number of ways to do this
+  1.  Opacity 0 on the element, set it’s height and width to define clickable area, set the height and width of it’s parent to be the same as the input (don’t forget position relative). Style the parent.
+  2.  Hide the element, style a corresponding label how you wanted the element to appear
+  3.  Try using pseudo elements and the selector :checked for no JS switching between checked and unchecked images used for styling
 
 ---
 
@@ -222,25 +244,11 @@ Adds a submit button:
 
 ----
 
-### Learning Objectives
-
-* <!--- .element: class="fragment" data-fragment-index="1" -->Describe how to add a form to a webpage
-* <!--- .element: class="fragment" data-fragment-index="2" -->Describe 3 different types of input tags
-* <!--- .element: class="fragment" data-fragment-index="3" -->Implement a select field
-
-----
-
-### Homework
-
-Make Relaxr's website responsive.
-
-----
-
-### Final Project
-
-----
-
 ### Exit Tickets
 
 Give us feedback! Let us know what we're doing well at, and more
 importantly, what we can improve at.
+
+----
+
+### Final Project
