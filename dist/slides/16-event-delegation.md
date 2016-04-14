@@ -4,7 +4,7 @@
 
 ## Event Delegation
 
-Brian Cama & Sarah McAlear
+Brian Cama & Steve Minor
 
 ---
 
