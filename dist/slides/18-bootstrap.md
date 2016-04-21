@@ -115,6 +115,7 @@ To use the Bootstrap capabilities we will have to add classes to our html elemen
 </div></code></pre>
 
 ----
+
 ### Container
 
 
@@ -154,7 +155,7 @@ Content should be placed inside columns. You are provided with predefined css cl
 
 The second part of the column class syntax allows you to change the grid depending on the size of the viewport. 
 
-<img src="/img/bootstrap.png" style="border:none; height:400px; background: transparent; box-shadow:none;" />
+<img src="/img/grid-layouts.jpg" style="border:none; height:400px; background: transparent; box-shadow:none;" />
 
 ----
 
@@ -162,8 +163,10 @@ The second part of the column class syntax allows you to change the grid dependi
 
 Bootstrap bases it's grid on a 12 column system. The final number tells the element how many columns it should span. 
 
-```<div class="col-md-6">First Column</div>
-<div class="col-md-6">Second Column</div>```
+```
+<div class="col-md-6">First Column</div>
+<div class="col-md-6">Second Column</div>
+```
 
 ----
 
@@ -203,8 +206,6 @@ The easiest and simplest way to customize your Bootstrap site is to add your own
 
 ##Bootstrap Navbar
 
-
----
 
 ----
 
