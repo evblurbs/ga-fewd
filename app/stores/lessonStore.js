@@ -20,7 +20,7 @@ var _15 = require('./lessons/_15');
 var _16 = require('./lessons/_16');
 // var _17 = require('./lessons/_17');
 var _18 = require('./lessons/_18');
-// var _19 = require('./lessons/_19');
+var _19 = require('./lessons/_19');
 
 var _lessons = [];
 // push lessons to _lessons array
@@ -29,7 +29,7 @@ var _lessons = [];
 // lessons are listed in ascending order
 // of the array's index
 
-// _lessons.push(_19);
+_lessons.push(_19);
 _lessons.push(_18);
 // _lessons.push(_17);
 _lessons.push(_16);
