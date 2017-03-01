@@ -33,7 +33,6 @@ var Main = React.createClass({
       <div className="home">
         <div className="header-section">
           <h2>FRONT-END WEB DEVELOPMENT<br />GENERAL ASSEMBLY<br />FEBRUARY 22ND - APRIL 27TH</h2>
-          <a href="/fewd8login" className="button">Sign Up</a>
         </div>
         <div className="section-break">
           <h1>Welcome to the FEWD course!</h1>
@@ -44,7 +43,7 @@ var Main = React.createClass({
   },
 
   render: function() {
-    if(this.data.user) {
+    /*if(this.data.user) {*/
       return (
         <div className="page-wrap">
           <div className="content">
@@ -54,7 +53,7 @@ var Main = React.createClass({
           <Footer />
         </div>
       );
-    } else {
+    /*} else {
       return (
         <div className="page-wrap">
           <div className="content">
@@ -64,7 +63,7 @@ var Main = React.createClass({
           <Footer />
         </div>
       );
-    }
+    }*/
   }
 });
 

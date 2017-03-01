@@ -29,41 +29,29 @@ var Nav = React.createClass({
   },
 
   render: function() {
-    if (this.props.user) {
-      return (
-        <div>
-          <nav className="nav group">
-            {this.renderWelcomeUser()}
-            <ul>
-              <li>
-                <Link to="home">Lessons</Link>
-              </li>
-              <li>
-                <Link to="cohort">Cohort</Link>
-              </li>
-              <li>
-                <Link to="logout">Logout</Link>
-              </li>
-            </ul>
-          </nav>
-          {this.renderFEWDTitle()}
-        </div>
-      );
-    } else {
-      return (
-        <div>
-          <nav className="nav group">
-            {this.renderWelcome()}
-            <ul>
-              <li>
-                <a href="/fewd8login">Login</a>
-              </li>
-            </ul>
-          </nav>
-          {this.renderFEWDTitle()}
-        </div>
-      );
-    }
+    return (
+      <div>
+        <nav className="nav group">
+          {/*this.renderWelcomeUser()*/}
+          <ul>
+            <li>
+              <Link to="home">Home</Link>
+            </li>
+            <li>
+              <Link to="lessons">Lessons</Link>
+            </li>
+            {/*<li>
+              <Link to="cohort">Cohort</Link>
+            </li>
+            <li>
+              <Link to="logout">Logout</Link>
+            </li>*/}
+          </ul>
+        </nav>
+        {this.renderFEWDTitle()}
+      </div>
+    );
+
   }
 });
 

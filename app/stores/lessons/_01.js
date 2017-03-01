@@ -3,11 +3,11 @@ var _01 = {
   description: "In this lesson, we will go over GitHub - how our class will use it and how it's used throughout the industry. After setting up GitHub, we'll jump into HTML. This will be a review if you went through Dash or had some experience with HTML in the past. We will cover the structure of HTML and how it is meant to be declarative of your content. Depending how fast we go through the content, we may cover other ways to use Git and GitHub, introduce CSS, and address any general questions.",
   slides: "/01-basics-html.md",
   number: "01",
-  date: '02.22.16',
+  date: '02.21.17',
   Homework: [
     {
       title: "Week 1 Assignment - About/Portfolio",
-      url: "https://github.com/ga-students/FEWD-SEA-8/tree/master/Week_01_Basics/Assignment",
+      url: "https://github.com/ga-students/FEWD-SEA-12/tree/master/Week_01_Basics/Assignment",
       urlText: "Starter Code",
       description: "Create two HTML pages to create an About Me page as well as a Portfolio page. Remember, HTML is supposed to be declarative. Ask yourself what is each piece of content in relationship to the structure of the whole HTML page."
     }
@@ -34,7 +34,7 @@ var _01 = {
   ],
   Links: [
     {
-      url: "https://github.com/ga-students/FEWD-SEA-7",
+      url: "https://github.com/ga-students/FEWD-SEA-12",
       urlText: "Student Repository",
       description: "This is the Student Repository for the class. Make sure to have a clone of this repository on your computer. New material will be added (i.e. starter code, resources, etc.) throughout the class, and you'll need to sync/pull the updates from the repository to your local repository."
     }

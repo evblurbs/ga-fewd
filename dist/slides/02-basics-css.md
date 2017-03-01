@@ -4,7 +4,7 @@
 
 ## HTML and CSS
 
-Brian Cama & Steve Minor
+Brian Cama
 
 
 ---
@@ -12,10 +12,9 @@ Brian Cama & Steve Minor
 ## Learning Objectives
 
 * <!--- .element: class="fragment" data-fragment-index="1" -->Predict image paths and apply relative paths to img and a tags
-* <!--- .element: class="fragment" data-fragment-index="2" -->Identify 2 ways to declare colors in CSS
-* <!--- .element: class="fragment" data-fragment-index="3" -->Identify 3 places where you can add CSS
-* <!--- .element: class="fragment" data-fragment-index="4" -->Describe CSS Inheritance
-* <!--- .element: class="fragment" data-fragment-index="5" -->Calculate CSS Specificity
+* <!--- .element: class="fragment" data-fragment-index="2" -->Describe CSS Inheritance
+* <!--- .element: class="fragment" data-fragment-index="3" -->Calculate CSS Specificity
+* <!--- .element: class="fragment" data-fragment-index="4" -->Build a simple page
 
 Note: On the board before class ask students to research the tags header, img, hr and nav. Explain in front of class.
 
@@ -39,6 +38,8 @@ Note: On the board before class ask students to research the tags header, img, h
 &lt;img src="path/to/image" /&gt;
 </code></pre>
 
+Note: The `img` tag requires a `src` attribute, which tells the browser where to find the image.
+
 ----
 
 ### Paths
@@ -57,6 +58,14 @@ Note: On the board before class ask students to research the tags header, img, h
 <pre><!--- .element: class="fragment" data-fragment-index="3" --><code data-trim class="html">
 &lt;img src="/images/logo.png" /&gt;
 </code></pre>
+
+Note:
+
+  Absolute URLs start with a `/`, so if we imagine that our `webroot` directory was stored on a server such that the `webroot/index.html` file is accessible at `http://example.com/index.html`, then placing the logo image could be done from any html page with: ```<img src="/images/logo.png">```
+
+The benefit here is that this same ```src``` path works on any html page, no matter what its location, so the same ```img``` tag can be used on both the ```webroot/index.html``` page and the ```webroot/about/index.html``` page.
+
+The downside is that the path only works if the project is stored to a proper location for serving.
 
 ----
 
@@ -106,7 +115,7 @@ A piece of text to be used in lieu of the image when the image is unavailable
 
 Using `alt` attributes has the added benefit of giving search engines more linguistic context about the image as it is used on your page.
 
-Reasons an image may not load: 
+Reasons an image may not load:
 
 * There was a connection error, the browser didn't download the image.
 
@@ -143,8 +152,6 @@ Note: Go through the about_me_deliverable.png and ask the students to tag the el
 <pre><code data-trim class="css">
 p {
   color: red;
-  font-weight: bold;
-  font-size: 14px;
 }
 
 img {
@@ -153,6 +160,10 @@ img {
   border-radius: 50px;
 }
 </code></pre>
+
+Note:
+Every declaration is a **property** followed by a **value**, separated by a colon, ending in a semicolon.
+In this declaration, we are setting the `color` **property** to the **value** `red`.
 
 ----
 
@@ -189,12 +200,6 @@ img {
 
 ----
 
-### Code Along
-
-<img src="/img/code_along.png" style="border:none;box-shadow:none;background:transparent;" />
-
-----
-
 ### Where does CSS live?
 
 ####External
@@ -212,17 +217,27 @@ img {
 &lt;/html&gt;
 </code></pre>
 
+Note: Using a separate CSS file
+Its best practice to put CSS in its own file and link to it from the `<head>`.
+```<link rel="stylesheet" href="style.css">```
+
+"The `link` tag needs two attributes: `rel="stylesheet"` and an `href` attribute.
+
+The `href` attribute value works very similarly to linking to an image, or to another page.
+
 ----
 
-### Lab
+### Code Along
 
-<img src="/img/exercise_icon_md.png" style="border:none;box-shadow:none;background:transparent;" />
+<img src="/img/code_along.png" style="border:none;box-shadow:none;background:transparent;" />
 
-----
+Note: Here we create our index.html page for the homework assignment and focus on using our What Tag Is It? exercise to fill in our HTML.
+
+---
 
 ### Color Keywords
 
-<img src="/img/color.png" style="border:none;background:transparent;" />
+<img src="img/color.png" style="border:none;background:transparent;" />
 
 <pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="css">
 p {
@@ -242,7 +257,7 @@ p {
 
 ### Hexcode Colors
 
-<img src="/img/hex_colors.png" style="border:none;background:transparent;" />
+<img src="img/hex_colors.png" style="border:none;background:transparent;" />
 
 <pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="css">
 p {
@@ -257,6 +272,11 @@ p {
   color: #00F; /* blue */
 }
 </code></pre>
+
+Note:
+"Hex" values are so-called because they use hexadecimal, or base-16, to describe the color values for red, green, and blue. Each of the 3 color values is expressed by two hexadecimal digits, from `00` (no color) to `FF` (full color), and are written in the order red, green, then blue, after an initial `#` sign.
+
+Hex values can be abbreviated to only 3 digits if each digits is doubled. So `#FFFFFF` (white) can be expressed more succinctly as `#FFF`, and `#000000` (black) can be expressed as `#000`. `#FA6198`, however, cannot be abbreviated without altering the color.
 
 ----
 
@@ -276,11 +296,18 @@ p {
 }
 </code></pre>
 
+Note:
+FF in base-16 is equivalent to 255 in base-10.
+
+In RGB, `rgb(0,0,0)` is black, `rgb(255,255,255)` is white, `rgb(255,0,0)` is red, etc.
+
+White-space is allowed *inside* the parentheses, so `rgb(255, 0, 0)` will do just as well.
+
 ----
 
 ### RGBA Colors
 
-<img src="/img/rgba_color.png" style="border:none;background:transparent;" />
+<img src="img/rgba_color.png" style="border:none;background:transparent;" />
 
 <pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="css">
 div {
@@ -296,12 +323,16 @@ div {
 }
 </code></pre>
 
+Note:
+0 is completely transparent, and 1 being solid. 0.5 or .5 is 50% opacity.
 
-----
+Thus, __rgba(0,0,0,.25)__ is black at 25% opacity and __rgba(255, 255, 255, 0.8)__ is white at 80% opacity.
 
-### Color Wheel
+The alpha value can be in decimal form but cannot use a percentage. When a decimal is used, the leading zero is optional.
 
-<img src="/img/color_wheel.png" style="max-width:500px;border:none;box-shadow:none;" />
+---
+
+##CSS: Styling our HTML
 
 ----
 
@@ -345,7 +376,7 @@ img {
 }
 
 li[background="transparent"] {
-  background-color: transparent;  
+  background-color: transparent;
 }
 </code></pre>
 
@@ -393,12 +424,6 @@ li[background="transparent"] {
 
 ----
 
-### Lab
-
-<img src="/img/exercise_icon_md.png" style="border:none;box-shadow:none;background:transparent;" />
-
-----
-
 ### Inheritance
 
 * What color will the strong tag be?
@@ -420,9 +445,9 @@ li {
 
 ----
 
-### Cascading
+### Descendant Selectors
 
-C is for Cascading
+Matches elements that are descendants of a specified element
 
 <pre><code data-trim class="html">
 &lt;div class="first"&gt;
@@ -438,6 +463,14 @@ C is for Cascading
   font-weight: 700;
 }
 </code></pre>
+
+----
+
+### The Cascade
+
+<img src="img/proximity.gif" style="border:none;" />
+
+Note: The cascade is a fundamental feature of CSS. It is an algorithm defining how to combine properties values originating from different sources. It lies at the core of CSS as stressed by its name: Cascading Style Sheets.
 
 ----
 

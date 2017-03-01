@@ -4,7 +4,7 @@
 
 ## GitHub and HTML
 
-Brian Cama & Steve Minor
+Brian Cama
 
 Note: Give overview of course. Set class expectations.
 
@@ -23,13 +23,13 @@ Note: Give overview of course. Set class expectations.
 
 ## GitHub
 
-<img src="../img/Octocat.png" style="border:none; height:400px; background: transparent; box-shadow:none;" />
+<img src="/img/Octocat.png" style="border:none; height:400px; background: transparent; box-shadow:none;" />
 
 ----
 
 ### What is GitHub?
 
-* <!--- .element: class="fragment" data-fragment-index="1" -->**Git** is a *version control system*. **GitHub** is a *platform*. 
+* <!--- .element: class="fragment" data-fragment-index="1" -->**Git** is a *version control system*. **GitHub** is a *platform*.
 * <!--- .element: class="fragment" data-fragment-index="2" -->**GitHub** stores files like Dropbox or Google Drive.
 * <!--- .element: class="fragment" data-fragment-index="3" -->**Git/GitHub** keep a history of changes made to your project's files.
 
@@ -81,6 +81,14 @@ Similar to clone, forking a repository copies data. Instead of copying it from t
 
 ----
 
+### GitHub Code Along
+
+<img src="/img/code_along.png" style="border:none;box-shadow:none;background:transparent;" />
+
+Note: Cloned the class repo(FEWD-SEA-8) to our computers and created a new repository cookie_recipe to work on in class/homework lab
+
+----
+
 ### Collaborating with Git
 
 1. <!--- .element: class="fragment" data-fragment-index="1" -->**Clone** the **repository**
@@ -89,14 +97,6 @@ Similar to clone, forking a repository copies data. Instead of copying it from t
 4. <!--- .element: class="fragment" data-fragment-index="4" -->**Push** local commits to central **repository**
 
 Note: GitHub's collaborative process can work many different ways, but this is the most common. Remember: "Clone" means that we are copying our GitHub repository from the cloud and saving it as a local folder on our computer. Engineers typically create new branches for certain features or portions of the code they will work on, but we won't be creating branches in this class in this class. In the GitHub App Push is usually referred to as publish or sync.
-
-----
-
-### GitHub Code Along
-
-<img src="/img/code_along.png" style="border:none;box-shadow:none;background:transparent;" />
-
-Note: Cloned the class repo(FEWD-SEA-8) to our computers and created a new repository cookie_recipe to work on our in class/homework lab
 
 ---
 

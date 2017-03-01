@@ -4,7 +4,7 @@
 
 ## Box Model
 
-Brian Cama & Steve Minor
+Brian Cama
 
 ---
 
@@ -256,15 +256,6 @@ importantly, what we can improve at.
 
 ----
 
-### Learning Objective
+###Homework Upload Process
 
-* <!--- .element: class="fragment" data-fragment-index="1" -->Use a nested CSS selector
-* <!--- .element: class="fragment" data-fragment-index="2"
-  -->List the 4 ***layers*** of the Box Model
-* <!--- .element: class="fragment" data-fragment-index="3"
-  -->Describe the difference between padding, border, and margin
-* <!--- .element: class="fragment" data-fragment-index="4"
-  -->Calculate the ***border-box*** width of an element
-
-
-
+Let's review

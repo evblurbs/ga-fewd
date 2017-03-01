@@ -12,7 +12,7 @@ var Cohort = require('../components/Cohort');
 
 var routes = (
   <Route handler={Main} >
-    <Route name="home" path="/" handler={Lessons} />
+    <Route name="home" path="/" handler={Home} />
     <Route name="messages" path="/messages" handler={Messages} />
     <Route name="profile" path="/profile" handler={Profile} />
     <Route name="cohort" path="/cohort" handler={Cohort} />

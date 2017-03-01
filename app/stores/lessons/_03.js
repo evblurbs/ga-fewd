@@ -3,11 +3,11 @@ var _03 = {
   description: "The CSS Box Model defines the rules that all website layouts must follow. In this lesson we will review the various properties of the CSS Box Model, and how you can change the layout of block elements. You’ll see how these block elements are used to create websites. We will also review tag and nested selectors again.",
   slides: "/03-styling-box-model.md",
   number: "03",
-  date: '02.29.16',
+  date: '02.28.17',
   Homework: [
     {
       title: "Coding: Box Model",
-      url: "https://github.com/ga-students/FEWD-SEA-8/tree/master/Week_02_Styling/Assignment",
+      url: "https://github.com/ga-students/FEWD-SEA-12/tree/master/Week_02_Styling/Assignment",
       urlText: "Relaxr",
       description: "In this assignment, you will create the landing page of a NY startup named Relaxr. To create this landing page, you'll need to implement rules of the box model (i.e. padding, border, margin)."
     },
