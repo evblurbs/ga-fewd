@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --devtool eval --hot --progress --colors --content-base dist",
-    "deploy": "set NODE_ENV=production&&webpack -p"
+    "deploy": "NODE_ENV=production webpack -p"
   },
   "repository": {
     "type": "git",
@@ -24,8 +24,6 @@
     "jsx-loader": "0.13.2",
     "node-sass": "3.3.3",
     "object-assign": "3.0.0",
-    "parse": "1.6.9",
-    "parse-react": "0.5",
     "react": "0.13.3",
     "react-router": "0.13.3"
   },

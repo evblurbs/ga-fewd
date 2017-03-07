@@ -19,7 +19,7 @@ var config = {
   // and create a vendors.js file. As you can see the first argument matches the key
   // of the entry, "vendors"
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin('app', null, false)
+    new webpack.optimize.CommonsChunkPlugin({name: 'app'})
   ],
   output: {
     publicPath: '/',
